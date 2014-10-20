@@ -8,6 +8,9 @@
 
 #import "ZTestCoreDataViewController.h"
 #import <CoreData/CoreData.h>
+#import "Person.h"
+#import "Card.h"
+
 #define CLEARCOLOR [UIColor clearColor]
 
 @interface ZTestCoreDataViewController ()
@@ -45,11 +48,18 @@
     context.persistentStoreCoordinator = psc;
     // 用完之后，记得要[context release];
     
+    [self forTxtField];
+    
+    [self forButton];
+    
+}
+
+-(void) forTxtField
+{
     nameTxt = [[UITextField alloc] initWithFrame:CGRectMake(10, 80, 300, 40)];
     nameTxt.backgroundColor = CLEARCOLOR;
     nameTxt.placeholder = @"name";
     nameTxt.borderStyle = UITextBorderStyleRoundedRect;
-//    nameTxt.
     nameTxt.layer.cornerRadius = 5;
     nameTxt.delegate = self;
     [self.view addSubview:nameTxt];
@@ -69,17 +79,20 @@
     numberTxt.layer.cornerRadius = 5;
     numberTxt.delegate = self;
     [self.view addSubview:numberTxt];
-    
+}
+
+-(void) forButton
+{
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     btn.frame = CGRectMake(10, 230, 50, 40);
     [btn setTitle:@"增加" forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(add) forControlEvents:UIControlEventTouchUpInside];
+    [btn addTarget:self action:@selector(addh) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     
     UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     btn1.frame = CGRectMake(100, 230, 50, 40);
     [btn1 setTitle:@"查询" forState:UIControlStateNormal];
-    [btn1 addTarget:self action:@selector(query) forControlEvents:UIControlEventTouchUpInside];
+    [btn1 addTarget:self action:@selector(queryh) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn1];
     
     UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -90,13 +103,12 @@
     
     UIButton *btn3 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     btn3.frame = CGRectMake(100, 280, 50, 40);
-    [btn3 setTitle:@"结束" forState:UIControlStateNormal];
-    [btn3 addTarget:self action:@selector(query) forControlEvents:UIControlEventTouchUpInside];
+    [btn3 setTitle:@"更新" forState:UIControlStateNormal];
+    [btn3 addTarget:self action:@selector(updateThePersonData) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn3];
-    
-    
 }
 
+#pragma mark - 没有建立Person,Card实体类之前的方法 start
 -(void) add
 {
     // 传入上下文，创建一个Person实体对象
@@ -171,7 +183,6 @@
     [fetchRequest setEntity:[NSEntityDescription entityForName:@"Person" inManagedObjectContext:context]];
     
     //删除谁的条件在这里配置；
-//    NSString *theName = @"tomcat";
     [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"name = %@", predicatedd]];
     
     NSError *error = nil;
@@ -197,9 +208,112 @@
 
     if (buttonIndex == 0) {
         
-        [self deleteObject:[alertView textFieldAtIndex:0].text];
+        [self deleteObjecth:[alertView textFieldAtIndex:0].text];
     }
 }
+
+- (void)updateThePersonData
+{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    [fetchRequest setEntity:[NSEntityDescription entityForName:@"Person" inManagedObjectContext:context]];
+    
+    //更新谁的条件在这里配置；
+    NSString *theName = nameTxt.text;
+    [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"name==%@", theName]];
+    
+    NSError* error = nil;
+    NSArray* results = [context executeFetchRequest:fetchRequest error:&error];
+    
+    if (results.count > 0) {
+//        [context updatedObjects];
+        Person *person = [results objectAtIndex:0];
+        person.name = @"tomcat";
+    }
+    
+    [context save:&error];
+    if (error) {
+        [NSException raise:@"删除错误" format:@"%@", [error localizedDescription]];
+    }
+}
+
+#pragma mark - 没有建立Person,Card实体类之前的方法 end
+
+#pragma mark - 建立Person,Card实体类之后的方法 start
+-(void) addh
+{
+    Person *person = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:context];
+    person.name = nameTxt.text;
+    person.age = [NSNumber numberWithInt:[ageTxt.text intValue]];
+    
+    Card *card = [NSEntityDescription insertNewObjectForEntityForName:@"Card" inManagedObjectContext:context];
+    card.number = numberTxt.text;
+    person.card = card;
+    // 最后调用[context save&error];保存数据
+    // 利用上下文对象，将数据同步到持久化存储库
+    NSError *error = nil;
+    BOOL success = [context save:&error];
+    if (!success) {
+        [NSException raise:@"访问数据库错误" format:@"%@", [error localizedDescription]];
+    }
+}
+
+-(void) queryh
+{
+    // 初始化一个查询请求
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    // 设置要查询的实体
+    request.entity = [NSEntityDescription entityForName:@"Person" inManagedObjectContext:context];
+    // 设置排序（按照age降序）
+    NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"age" ascending:NO];
+    request.sortDescriptors = [NSArray arrayWithObject:sort];
+    // 设置条件过滤(搜索name中包含字符串"Itcast-1"的记录，注意：设置条件过滤时，数据库SQL语句中的%要用*来代替，所以%Itcast-1%应该写成*Itcast-1*)
+    //    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name like %@", @"*Itcast-1*"];
+    //    request.predicate = predicate;
+    // 执行请求
+    NSError *error = nil;
+    NSArray *objs = [context executeFetchRequest:request error:&error];
+    
+    if (error) {
+        [NSException raise:@"查询错误" format:@"%@", [error localizedDescription]];
+    }
+    // 遍历数据
+    if ([objs count] == 0) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"无相关数据" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+        [alert show];
+    }
+    for (Person *person in objs) {
+        ZLOG(@"name=%@, age=%@, number=%@", person.name, person.age, person.card.number);
+    }
+}
+
+-(void) deleteObjecth:(NSString *)predicatedd
+{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    [fetchRequest setEntity:[NSEntityDescription entityForName:@"Person" inManagedObjectContext:context]];
+    
+    //删除谁的条件在这里配置；
+    //    NSString *theName = @"tomcat";
+    [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"name = %@", predicatedd]];
+    
+    NSError *error = nil;
+    NSArray *results = [context executeFetchRequest:fetchRequest error:&error];
+    
+    if ([results count] > 0) {
+        [context deleteObject:[results objectAtIndex:0]];
+        //        ZLOG(@"%@",results);
+    } else {
+        ZLOG(@"无相关数据");
+        return;
+    }
+    
+    // 将结果同步到数据库
+    [context save:&error];
+    if (error) {
+        [NSException raise:@"删除错误" format:@"%@", [error localizedDescription]];
+    }
+}
+
+#pragma mark - 建立Person,Card实体类之后的方法 end
 
 - (BOOL)textFieldShouldEndEditing:(UITextField *)textField
 {

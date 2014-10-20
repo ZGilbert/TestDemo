@@ -60,7 +60,7 @@
     ZLOG(@"expected Length: %lld", _expectedLeght);
     
     NSString *mimeType = response.MIMEType;
-    NSLog(@"MIME TYPE %@", mimeType);
+    ZLOG(@"MIME TYPE %@", mimeType);
     
     NSArray *arr = [mimeType componentsSeparatedByString:@"/"];
     if (arr.count < 1 || ![[arr objectAtIndex:0] isEqual:@"image"]) {

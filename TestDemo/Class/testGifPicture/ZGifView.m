@@ -66,6 +66,10 @@ void getFrameInfo(CFURLRef url, NSMutableArray *frames, NSMutableArray *delayTim
 {
     self = [super initWithFrame:CGRectZero];
     if (self) {
+//        CFArrayRef *array = CGImageSourceCopyTypeIdentifiers;
+//        NSLog(@"%@", array);
+        CFArrayRef mySourceTypes = CGImageSourceCopyTypeIdentifiers();
+        CFShow(mySourceTypes);
         
         _frames = [[NSMutableArray alloc] init];
         _frameDelayTimes = [[NSMutableArray alloc] init];

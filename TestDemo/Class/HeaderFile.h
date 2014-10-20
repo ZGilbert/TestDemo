@@ -28,8 +28,8 @@
 //#import "ZTestGifPictureViewController.h"
 //#import "ZTestStatusBarViewController.h"
 //#import "ZIncrementallyImageViewController.h"
-#import "ZTestCoreDataViewController.h"
-
+//#import "ZTestCoreDataViewController.h"
+#import "ZTestCDUseDelegateController.h"
 
 
 #endif

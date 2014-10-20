@@ -63,23 +63,23 @@
     NSLog(@"CGColor from UIColor: %@", color.CGColor);*/
     
     // test kCGColorSpaceDeviceGray
-    NSLog(@"CGColor white color:%@", [UIColor whiteColor].CGColor);
+    ZLOG(@"CGColor white color:%@", [UIColor whiteColor].CGColor);
     
     CIColor *ciColor = [CIColor colorWithCGColor:[UIColor whiteColor].CGColor];
-    NSLog(@"cicolor: %@", ciColor);
-    NSLog(@"cicolor colorspace: %@", ciColor.colorSpace);
+    ZLOG(@"cicolor: %@", ciColor);
+    ZLOG(@"cicolor colorspace: %@", ciColor.colorSpace);
     
     UIColor *color = [UIColor colorWithCIColor:ciColor];
-    NSLog(@"color %@", color);
+    ZLOG(@"color %@", color);
     
     // Core Image converts all color spaces to the Core Image working color
     // space before it passes the color space to the filter kernel.
     // kCGColorSpaceDeviceGray ---> kCGColorSpaceDeviceRGB
-    NSLog(@"cicolor from UIColor: %@", color.CIColor);
-    NSLog(@"cicolor's colorspace: %@", color.CIColor.colorSpace);
-    NSLog(@"color's CGColor: %@", color.CGColor);
-    NSLog(@"cicolor from UIColor: %@", color.CIColor);
-    NSLog(@"cicolor's colorspace: %@", color.CIColor.colorSpace);
+    ZLOG(@"cicolor from UIColor: %@", color.CIColor);
+    ZLOG(@"cicolor's colorspace: %@", color.CIColor.colorSpace);
+    ZLOG(@"color's CGColor: %@", color.CGColor);
+    ZLOG(@"cicolor from UIColor: %@", color.CIColor);
+    ZLOG(@"cicolor's colorspace: %@", color.CIColor.colorSpace);
 }
 
 - (void)didReceiveMemoryWarning

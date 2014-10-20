@@ -35,7 +35,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    ZTestCoreDataViewController *test = [[ZTestCoreDataViewController alloc] init];
+    ZTestCDUseDelegateController *test = [[ZTestCDUseDelegateController alloc] init];
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:test];
     
     /*[ZTestHookTwo initialize];
@@ -46,10 +46,43 @@
     [btn addTarget:self action:nil forControlEvents:UIControlEventTouchUpInside];
     [self.window addSubview:btn];*/
     
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(orientationChanged:)
+                                                 name:UIDeviceOrientationDidChangeNotification
+                                               object:nil];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = navi;
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)orientationChanged:(NSNotification*)notification {
+    
+    UIDeviceOrientation orientation = [UIDevice currentDevice].orientation;
+    NSString *orientationDes = nil;
+    switch (orientation) {
+        case UIDeviceOrientationLandscapeLeft:
+            orientationDes = @"UIInterfaceOrientationLandscapeRight";
+            break;
+        case UIDeviceOrientationLandscapeRight:
+            orientationDes = @"UIInterfaceOrientationLandscapeLeft";
+            break;
+        case UIDeviceOrientationPortrait:
+            orientationDes = @"UIInterfaceOrientationPortrait";
+            break;
+        case UIDeviceOrientationPortraitUpsideDown:
+            orientationDes = @"UIInterfaceOrientationPortraitUpsideDown";
+            break;
+        default:
+            orientationDes = @"";
+            break;
+    }
+    
+//    ZLOG(@"system ver: %@, \rorientaion: %@, \rwindow bounds: %@",
+//          [UIDevice currentDevice].systemVersion,
+//          orientationDes,
+//          NSStringFromCGRect(self.window.bounds));
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

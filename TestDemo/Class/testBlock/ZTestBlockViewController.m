@@ -26,12 +26,12 @@
 
 -(void) viewWillAppear:(BOOL)animated
 {
-    [MobClick beginLogPageView:@"PageOne"];
+//    [MobClick beginLogPageView:@"PageOne"];
 }
 
 -(void) viewWillDisappear:(BOOL)animated {
 
-    [MobClick endLogPageView:@"PageOne"];
+//    [MobClick endLogPageView:@"PageOne"];
 }
 
 - (void)viewDidLoad
