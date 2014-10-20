@@ -149,6 +149,7 @@
 {
 //    _inputField.hidden = NO;
     ZThirdTableViewController *third = [[ZThirdTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     [self.navigationController pushViewController:third animated:YES];
 }
 

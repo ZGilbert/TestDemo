@@ -1,29 +1,37 @@
 //
-//  ZTestAnimationViewController.m
+//  ZZTestTemperaturesViewController.m
 //  TestDemo
 //
-//  Created by zhu_hbo on 14-10-16.
+//  Created by zhu_hbo on 14/10/20.
 //  Copyright (c) 2014年 zhu_hbo. All rights reserved.
 //
 
-#import "ZTestAnimationViewController.h"
-#import <QuartzCore/QuartzCore.h>
-//#import "ZTestFadeView.h"
-#import "ZToggleView.h"
+#import "ZZTestTemperaturesViewController.h"
+#import "ZTestTemperatures.h"
 
-@interface ZTestAnimationViewController ()
+@interface ZZTestTemperaturesViewController ()
 
 @end
 
-@implementation ZTestAnimationViewController
+@implementation ZZTestTemperaturesViewController
+
+- (void) loadView
+{
+    [super loadView];
+    self.view.autoresizesSubviews=YES;
+    self.view.autoresizingMask=(UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return YES;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    ZToggleView *testView = [[ZToggleView alloc] initWithFrame:CGRectMake(10, 100, 200, 200)];
+    ZTestTemperatures *testView = [[ZTestTemperatures alloc] initWithFrame:CGRectMake(10, 100, 300, 300)];
     [self.view addSubview:testView];
-    
 }
 
 - (void)didReceiveMemoryWarning {

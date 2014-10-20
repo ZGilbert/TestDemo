@@ -48,7 +48,7 @@ cellConfigureBlock:(PackageCellBlock)aPackageBlock
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.reuseIdentifier];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.reuseIdentifier]; //此方法也需要registerClass这个方法的支持,不然后报错
 //    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.reuseIdentifier forIndexPath:indexPath]; //此方法不用判断!cell
 //    if (!cell) {
 //        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:self.reuseIdentifier];
