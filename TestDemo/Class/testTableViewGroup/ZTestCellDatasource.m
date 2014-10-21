@@ -43,10 +43,10 @@
     NSInteger rowsNumber;
     switch (section) {
         case 0:
-            rowsNumber = 8;
+            rowsNumber = 5;
             break;
         case 1:
-            rowsNumber = 1;
+            rowsNumber = 2;
             break;
         default:
             break;

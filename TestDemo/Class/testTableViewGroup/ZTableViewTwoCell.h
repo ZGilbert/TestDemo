@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ZTestCellDatasource.h"
+#import "ZItemsSource.h"
 
 @interface ZTableViewTwoCell : UITableViewCell
 
@@ -16,6 +16,6 @@
 
 @interface ZTableViewTwoCell (addMethod)
 
-- (void)configureCell:(ZTestCellDatasource *)aItems;
+- (void)configureCell:(ZItemsSource *)aItems;
 
 @end

@@ -11,8 +11,9 @@
 @implementation ZTableViewTwoCell
 
 
-- (void)configureCell:(ZTestCellDatasource *)aItems;
+- (void)configureCell:(ZItemsSource *)aItems;
 {
+//    self.textLabel.text = aItems.name;
     self.textLabel.text = @"two";
 }
 
