@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-//此Demo完善中..
 @interface ZTestTableViewGroupViewController : UIViewController
 
 @end
