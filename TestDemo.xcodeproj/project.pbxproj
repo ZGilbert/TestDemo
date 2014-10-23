@@ -90,6 +90,7 @@
 		D7A282E719F0B8CC00F4027E /* ZCoreDataAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A282E619F0B8CC00F4027E /* ZCoreDataAPI.m */; };
 		D7A282EF19F0C2AA00F4027E /* ZTestCDUseDelegateController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A282EE19F0C2AA00F4027E /* ZTestCDUseDelegateController.m */; };
 		D7C06AA119F6211000597D17 /* ZMacroApi.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C06AA019F6211000597D17 /* ZMacroApi.m */; };
+		D7C4323A19F7A66000F37227 /* ZTestConCurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C4323919F7A66000F37227 /* ZTestConCurrentViewController.m */; };
 		D7D30F5919EFCFC60011A4C1 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D7D30F5719EFCFC60011A4C1 /* Model.xcdatamodeld */; };
 		D7E96F9619D7FCD700C0EAB2 /* ZTestMemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E96F9519D7FCD700C0EAB2 /* ZTestMemoryViewController.m */; };
 		D7E96F9919D7FD5C00C0EAB2 /* ZTestMemroyView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E96F9819D7FD5C00C0EAB2 /* ZTestMemroyView.m */; };
@@ -267,6 +268,8 @@
 		D7A282EE19F0C2AA00F4027E /* ZTestCDUseDelegateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestCDUseDelegateController.m; path = Class/testCoreData/ZTestCDUseDelegateController.m; sourceTree = "<group>"; };
 		D7C06A9F19F6211000597D17 /* ZMacroApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZMacroApi.h; path = Class/ZMacroApi/ZMacroApi.h; sourceTree = "<group>"; };
 		D7C06AA019F6211000597D17 /* ZMacroApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZMacroApi.m; path = Class/ZMacroApi/ZMacroApi.m; sourceTree = "<group>"; };
+		D7C4323819F7A66000F37227 /* ZTestConCurrentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestConCurrentViewController.h; path = Class/testConCurrent/ZTestConCurrentViewController.h; sourceTree = "<group>"; };
+		D7C4323919F7A66000F37227 /* ZTestConCurrentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestConCurrentViewController.m; path = Class/testConCurrent/ZTestConCurrentViewController.m; sourceTree = "<group>"; };
 		D7D30F5819EFCFC60011A4C1 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		D7E96F9419D7FCD700C0EAB2 /* ZTestMemoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestMemoryViewController.h; path = Class/testMemory/ZTestMemoryViewController.h; sourceTree = "<group>"; };
 		D7E96F9519D7FCD700C0EAB2 /* ZTestMemoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestMemoryViewController.m; path = Class/testMemory/ZTestMemoryViewController.m; sourceTree = "<group>"; };
@@ -425,6 +428,7 @@
 		D76F892C19CFC3CB004024BF /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				D7C4323B19F7A66C00F37227 /* testConCurrent */,
 				D7C06AA219F6211800597D17 /* ZMacroApi */,
 				D79819A019F50B600061B902 /* testTableViewGroup */,
 				D798198A19F4A9FD0061B902 /* testTemperatures */,
@@ -552,14 +556,8 @@
 		D79819A019F50B600061B902 /* testTableViewGroup */ = {
 			isa = PBXGroup;
 			children = (
-				D798199D19F50B570061B902 /* ZTestTableViewGroupViewController.h */,
-				D798199E19F50B570061B902 /* ZTestTableViewGroupViewController.m */,
-				D79819A119F50BA20061B902 /* ZTableViewOneCell.h */,
-				D79819A219F50BA20061B902 /* ZTableViewOneCell.m */,
-				D79819A419F50BBC0061B902 /* ZTableViewTwoCell.h */,
-				D79819A519F50BBC0061B902 /* ZTableViewTwoCell.m */,
-				D79819A719F50C600061B902 /* ZTestCellDatasource.h */,
-				D79819A819F50C600061B902 /* ZTestCellDatasource.m */,
+				D7C4323719F7471000F37227 /* testDiffBetweenTwoCell */,
+				D7C4323619F746F600F37227 /* testTwoSection */,
 			);
 			name = testTableViewGroup;
 			sourceTree = "<group>";
@@ -814,6 +812,37 @@
 			name = ZMacroApi;
 			sourceTree = "<group>";
 		};
+		D7C4323619F746F600F37227 /* testTwoSection */ = {
+			isa = PBXGroup;
+			children = (
+				D798199D19F50B570061B902 /* ZTestTableViewGroupViewController.h */,
+				D798199E19F50B570061B902 /* ZTestTableViewGroupViewController.m */,
+				D79819A119F50BA20061B902 /* ZTableViewOneCell.h */,
+				D79819A219F50BA20061B902 /* ZTableViewOneCell.m */,
+				D79819A419F50BBC0061B902 /* ZTableViewTwoCell.h */,
+				D79819A519F50BBC0061B902 /* ZTableViewTwoCell.m */,
+				D79819A719F50C600061B902 /* ZTestCellDatasource.h */,
+				D79819A819F50C600061B902 /* ZTestCellDatasource.m */,
+			);
+			name = testTwoSection;
+			sourceTree = "<group>";
+		};
+		D7C4323719F7471000F37227 /* testDiffBetweenTwoCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = testDiffBetweenTwoCell;
+			sourceTree = "<group>";
+		};
+		D7C4323B19F7A66C00F37227 /* testConCurrent */ = {
+			isa = PBXGroup;
+			children = (
+				D7C4323819F7A66000F37227 /* ZTestConCurrentViewController.h */,
+				D7C4323919F7A66000F37227 /* ZTestConCurrentViewController.m */,
+			);
+			name = testConCurrent;
+			sourceTree = "<group>";
+		};
 		D7E96F9319D7FC5A00C0EAB2 /* testMemory */ = {
 			isa = PBXGroup;
 			children = (
@@ -992,6 +1021,7 @@
 				D700A5F219EDFF0F00D1A6F4 /* NSArray+Hook.m in Sources */,
 				D7D30F5919EFCFC60011A4C1 /* Model.xcdatamodeld in Sources */,
 				D79B908D19EF6BB000793A8A /* ZIncrementlyImage.m in Sources */,
+				D7C4323A19F7A66000F37227 /* ZTestConCurrentViewController.m in Sources */,
 				D7993A3319ED02DD00E0E2A4 /* ZTestHookViewController.m in Sources */,
 				D79819A619F50BBC0061B902 /* ZTableViewTwoCell.m in Sources */,
 				D76F893319CFC5C2004024BF /* ZSecondViewController.m in Sources */,

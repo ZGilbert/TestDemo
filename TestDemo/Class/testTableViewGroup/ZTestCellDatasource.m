@@ -63,7 +63,7 @@
 {
     NSString *reuserID = [self.reuseIdentifier objectAtIndex:indexPath.section];
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuserID]; //此方法也需要registerClass这个方法的支持,不然后报错
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuserID]; //此方法需要registerClass这个方法的支持,不然会报错
     id item = [self itemAtIndexPath:indexPath cellIdentifier:reuserID];
     self.cellBlock(cell, item);
     return cell;

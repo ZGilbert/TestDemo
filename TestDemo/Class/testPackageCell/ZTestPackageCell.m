@@ -74,9 +74,12 @@
     
     if (highlighted) {
         self.textLabel.textColor = [UIColor blackColor];
+        self.textLabel.shadowColor = [UIColor darkGrayColor];
+        self.textLabel.shadowOffset = CGSizeMake(3, 3);
     }
     else {
         self.textLabel.textColor = [UIColor redColor];
+        self.textLabel.shadowColor = nil;
     }
 }
 
