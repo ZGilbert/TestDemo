@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <pthread/pthread.h>
+//vice versa
 
+//此例为网上例子的整合,用于记录.版权归原作者所有
 @interface ZTestConCurrentViewController : UIViewController
 
 @end

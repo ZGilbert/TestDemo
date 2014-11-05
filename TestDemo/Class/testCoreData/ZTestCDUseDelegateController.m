@@ -30,11 +30,14 @@
     self.title = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"];
 //    self.title = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"];
 //    self.title = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
-    NSLog(@"self.title ==> %@", self.title);
+    ZLOG(@"self.title ==> %@", self.title);
     
     [self initDelegate];
     [self forTxtField];
     [self forButton];
+    
+    BOOL flag = YES;
+    NSAssert(flag, @"flag is NO");
 }
 
 -(void) initDelegate

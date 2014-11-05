@@ -7,6 +7,7 @@
 //
 
 #import "ZTestConCurrentViewController.h"
+#import "ZFindMinMaxThread.h"
 
 @interface ZTestConCurrentViewController ()
 
@@ -19,6 +20,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self testA];
+}
+
+-(void) testA
+{
     size_t const count = 1000000;
     uint32_t inputValues[count];
     

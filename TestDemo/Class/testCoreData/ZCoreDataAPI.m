@@ -21,10 +21,13 @@
 
 @synthesize delegate;
 
+dispatch_queue_t concurrentQueue;
+
 -(id) init
 {
     self = [super init];
     if (self) {
+        concurrentQueue = dispatch_queue_create("my.concurrent.queue", DISPATCH_QUEUE_CONCURRENT);
         delegates = [[NSMutableArray alloc] init];
     }
     return self;
@@ -32,7 +35,14 @@
 
 - (void)addDelegate:(id<ZCoreDataAPIDelegate>)aDelegate
 {
-    [delegates addObject:aDelegate];
+    dispatch_barrier_async(concurrentQueue, ^{
+        [delegates addObject:aDelegate];
+    });
+}
+
+- (void)removeDelegate:(id<ZCoreDataAPIDelegate>)aDelegate
+{
+    [delegates removeObject:aDelegate];
 }
 
 -(void) addData:(NSString *)name :(NSString *)age :(NSString *)number

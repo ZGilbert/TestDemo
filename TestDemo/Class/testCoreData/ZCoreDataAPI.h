@@ -19,5 +19,6 @@
 -(void) updateData:(NSString *)condition;
 
 - (void)addDelegate:(id<ZCoreDataAPIDelegate>)aDelegate;
+- (void)removeDelegate:(id<ZCoreDataAPIDelegate>)aDelegate;
 
 @end
