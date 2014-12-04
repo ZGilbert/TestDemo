@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D700A5F219EDFF0F00D1A6F4 /* NSArray+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = D700A5F119EDFF0F00D1A6F4 /* NSArray+Hook.m */; };
+		D707C6161A2FF39F00E1239B /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = D707C6151A2FF39F00E1239B /* OpenGLView.m */; };
 		D72EFAAE19EE004D005C4D23 /* ZTestNSArrayHookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D72EFAAD19EE004D005C4D23 /* ZTestNSArrayHookViewController.m */; };
 		D744E29819EF92950054EADB /* ZTestAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D744E29719EF92950054EADB /* ZTestAnimationViewController.m */; };
 		D744E29C19EF96FC0054EADB /* ZTestCoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D744E29B19EF96FC0054EADB /* ZTestCoreDataViewController.m */; };
@@ -115,6 +116,8 @@
 /* Begin PBXFileReference section */
 		D700A5F019EDFF0F00D1A6F4 /* NSArray+Hook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Hook.h"; path = "Class/testHook/NSArray+Hook.h"; sourceTree = "<group>"; };
 		D700A5F119EDFF0F00D1A6F4 /* NSArray+Hook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Hook.m"; path = "Class/testHook/NSArray+Hook.m"; sourceTree = "<group>"; };
+		D707C6141A2FF39F00E1239B /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLView.h; path = Class/testOpenGL/OpenGLView.h; sourceTree = "<group>"; };
+		D707C6151A2FF39F00E1239B /* OpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenGLView.m; path = Class/testOpenGL/OpenGLView.m; sourceTree = "<group>"; };
 		D72EFAAC19EE004D005C4D23 /* ZTestNSArrayHookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestNSArrayHookViewController.h; path = Class/testHook/ZTestNSArrayHookViewController.h; sourceTree = "<group>"; };
 		D72EFAAD19EE004D005C4D23 /* ZTestNSArrayHookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestNSArrayHookViewController.m; path = Class/testHook/ZTestNSArrayHookViewController.m; sourceTree = "<group>"; };
 		D744E29619EF92950054EADB /* ZTestAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestAnimationViewController.h; path = Class/testAnimation/ZTestAnimationViewController.h; sourceTree = "<group>"; };
@@ -326,6 +329,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D707C6131A2FF37500E1239B /* testOpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				D707C6141A2FF39F00E1239B /* OpenGLView.h */,
+				D707C6151A2FF39F00E1239B /* OpenGLView.m */,
+			);
+			name = testOpenGL;
+			sourceTree = "<group>";
+		};
 		D744E29519EF92740054EADB /* testAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,6 +448,7 @@
 		D76F892C19CFC3CB004024BF /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				D707C6131A2FF37500E1239B /* testOpenGL */,
 				D7C4323B19F7A66C00F37227 /* testConCurrent */,
 				D7C06AA219F6211800597D17 /* ZMacroApi */,
 				D79819A019F50B600061B902 /* testTableViewGroup */,
@@ -1046,6 +1059,7 @@
 				D7993A3019ECBB4D00E0E2A4 /* ZTestCell.m in Sources */,
 				D79A591719D930B1002FE15E /* ZThirdTableViewController.m in Sources */,
 				D798199019F4B32A0061B902 /* ZTestFadeView.m in Sources */,
+				D707C6161A2FF39F00E1239B /* OpenGLView.m in Sources */,
 				D79A591B19D95935002FE15E /* ZTestColorViewController.m in Sources */,
 				D72EFAAE19EE004D005C4D23 /* ZTestNSArrayHookViewController.m in Sources */,
 				D78B75DE19EE11E700247A07 /* ZTestSelectorViewController.m in Sources */,

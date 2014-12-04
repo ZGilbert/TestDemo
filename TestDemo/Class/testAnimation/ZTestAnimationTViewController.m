@@ -34,6 +34,12 @@
     upMaskView.backgroundColor = [UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:0.3f];
     upMaskView.hidden = NO;
     [self.view addSubview:upMaskView];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(50, 10, 200, 40)];
+    label.text = @"i am the label";
+    label.backgroundColor = [UIColor redColor];
+//    [self.view addSubview:label];
+    [self.navigationController.view addSubview:label];
     [self.navigationController.view addSubview:upMaskView];
     
     downMaskView = [[UIView alloc]
