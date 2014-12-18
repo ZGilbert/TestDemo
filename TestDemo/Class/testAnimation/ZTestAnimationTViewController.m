@@ -22,6 +22,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //画图
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 400, 100, 100)];
+    imageView.image = [UIImage imageNamed:@"test.png"];
+    
+    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(128/2.f, 128/2.f)
+                                                        radius:128/2.f startAngle:0 endAngle:M_PI*2.f clockwise:YES];
+    CAShapeLayer *shapeLayer = [[CAShapeLayer alloc] init];
+    shapeLayer.path = path.CGPath;
+    imageView.layer.mask = shapeLayer;
+    [self.view addSubview:imageView];
+    
+    
+    
+    UIActivityIndicatorView *rightActivity = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(100, 200, 30.0, 30.0)];
+    rightActivity.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
+    rightActivity.backgroundColor = [UIColor redColor];
+    rightActivity.autoresizingMask = UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleBottomMargin;
+    [self.view addSubview:rightActivity];
+    
+    
     // Do any additional setup after loading the view.
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [btn setTitle:@"touch" forState:UIControlStateNormal];
