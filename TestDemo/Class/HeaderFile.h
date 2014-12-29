@@ -34,9 +34,9 @@
 //#import "ZZTestTemperaturesViewController.h"
 //#import "ZTestAnimationViewController.h"
 //#import "ZTestConCurrentViewController.h"
-#import "ZTestAnimationTViewController.h"
+//#import "ZTestAnimationTViewController.h"
 //#import "ZTestSZTextViewViewController.h"
-
+#import "ZTestForSthViewController.h"
 
 
 #endif
