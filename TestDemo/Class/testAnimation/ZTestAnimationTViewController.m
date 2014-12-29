@@ -23,6 +23,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSMutableArray *array = [NSMutableArray array];
+    [array addObject:UITableViewIndexSearch];
+    
+    
     //画图
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 400, 100, 100)];
     imageView.image = [UIImage imageNamed:@"test.png"];

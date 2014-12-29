@@ -101,6 +101,7 @@
 		D7E96F9919D7FD5C00C0EAB2 /* ZTestMemroyView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E96F9819D7FD5C00C0EAB2 /* ZTestMemroyView.m */; };
 		D7E96F9B19D7FDB500C0EAB2 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = D7E96F9A19D7FDB500C0EAB2 /* test.png */; };
 		D7E96F9E19D8064D00C0EAB2 /* ZLazyLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E96F9D19D8064D00C0EAB2 /* ZLazyLoadViewController.m */; };
+		ED7CE24F1A514E84004C3C76 /* ZTestMemoryUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7CE24E1A514E84004C3C76 /* ZTestMemoryUseViewController.m */; };
 		EDC999321A42ACE10078F75E /* test1.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC999311A42ACE10078F75E /* test1.png */; };
 /* End PBXBuildFile section */
 
@@ -294,6 +295,8 @@
 		D7E96F9A19D7FDB500C0EAB2 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test.png; path = Class/testMemory/test.png; sourceTree = "<group>"; };
 		D7E96F9C19D8064D00C0EAB2 /* ZLazyLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZLazyLoadViewController.h; path = Class/testLazyLoad/ZLazyLoadViewController.h; sourceTree = "<group>"; };
 		D7E96F9D19D8064D00C0EAB2 /* ZLazyLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZLazyLoadViewController.m; path = Class/testLazyLoad/ZLazyLoadViewController.m; sourceTree = "<group>"; };
+		ED7CE24D1A514E84004C3C76 /* ZTestMemoryUseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestMemoryUseViewController.h; path = Class/testMemory/test2/ZTestMemoryUseViewController.h; sourceTree = "<group>"; };
+		ED7CE24E1A514E84004C3C76 /* ZTestMemoryUseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestMemoryUseViewController.m; path = Class/testMemory/test2/ZTestMemoryUseViewController.m; sourceTree = "<group>"; };
 		EDC999311A42ACE10078F75E /* test1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test1.png; path = Class/testMemory/test1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -913,12 +916,9 @@
 		D7E96F9319D7FC5A00C0EAB2 /* testMemory */ = {
 			isa = PBXGroup;
 			children = (
-				EDC999311A42ACE10078F75E /* test1.png */,
-				D7E96F9A19D7FDB500C0EAB2 /* test.png */,
-				D7E96F9419D7FCD700C0EAB2 /* ZTestMemoryViewController.h */,
-				D7E96F9519D7FCD700C0EAB2 /* ZTestMemoryViewController.m */,
-				D7E96F9719D7FD5C00C0EAB2 /* ZTestMemroyView.h */,
-				D7E96F9819D7FD5C00C0EAB2 /* ZTestMemroyView.m */,
+				ED7CE24C1A514E56004C3C76 /* test1 */,
+				ED7CE24D1A514E84004C3C76 /* ZTestMemoryUseViewController.h */,
+				ED7CE24E1A514E84004C3C76 /* ZTestMemoryUseViewController.m */,
 			);
 			name = testMemory;
 			sourceTree = "<group>";
@@ -930,6 +930,19 @@
 				D7E96F9D19D8064D00C0EAB2 /* ZLazyLoadViewController.m */,
 			);
 			name = testLazyLoad;
+			sourceTree = "<group>";
+		};
+		ED7CE24C1A514E56004C3C76 /* test1 */ = {
+			isa = PBXGroup;
+			children = (
+				EDC999311A42ACE10078F75E /* test1.png */,
+				D7E96F9A19D7FDB500C0EAB2 /* test.png */,
+				D7E96F9419D7FCD700C0EAB2 /* ZTestMemoryViewController.h */,
+				D7E96F9519D7FCD700C0EAB2 /* ZTestMemoryViewController.m */,
+				D7E96F9719D7FD5C00C0EAB2 /* ZTestMemroyView.h */,
+				D7E96F9819D7FD5C00C0EAB2 /* ZTestMemroyView.m */,
+			);
+			name = test1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1050,6 +1063,7 @@
 				D7BE5FC919F89831000128DA /* ZFindMinMaxThread.m in Sources */,
 				D798199319F4B5E70061B902 /* ZToggleView.m in Sources */,
 				D7E96F9E19D8064D00C0EAB2 /* ZLazyLoadViewController.m in Sources */,
+				ED7CE24F1A514E84004C3C76 /* ZTestMemoryUseViewController.m in Sources */,
 				D7A282EF19F0C2AA00F4027E /* ZTestCDUseDelegateController.m in Sources */,
 				D79FCD4119EB6F3100C44EF9 /* ZCustomLayer.m in Sources */,
 				D79AB31919DA89FE00C30C05 /* ZtestOperatorViewController.m in Sources */,
