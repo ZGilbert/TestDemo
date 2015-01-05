@@ -101,10 +101,14 @@
 		D7E96F9919D7FD5C00C0EAB2 /* ZTestMemroyView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E96F9819D7FD5C00C0EAB2 /* ZTestMemroyView.m */; };
 		D7E96F9B19D7FDB500C0EAB2 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = D7E96F9A19D7FDB500C0EAB2 /* test.png */; };
 		D7E96F9E19D8064D00C0EAB2 /* ZLazyLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E96F9D19D8064D00C0EAB2 /* ZLazyLoadViewController.m */; };
+		ED05EF011A53A99300CB9EC1 /* msg_left_1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED05EEFE1A53A99300CB9EC1 /* msg_left_1.png */; };
+		ED05EF021A53A99300CB9EC1 /* msg_left_2.png in Resources */ = {isa = PBXBuildFile; fileRef = ED05EEFF1A53A99300CB9EC1 /* msg_left_2.png */; };
+		ED05EF031A53A99300CB9EC1 /* msg_left_3.png in Resources */ = {isa = PBXBuildFile; fileRef = ED05EF001A53A99300CB9EC1 /* msg_left_3.png */; };
 		ED7CE24F1A514E84004C3C76 /* ZTestMemoryUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7CE24E1A514E84004C3C76 /* ZTestMemoryUseViewController.m */; };
 		ED7CE2541A515E6F004C3C76 /* ZTestForSthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7CE2531A515E6F004C3C76 /* ZTestForSthViewController.m */; };
 		ED7CE2571A515EF9004C3C76 /* gallery_enter.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7CE2561A515EF9004C3C76 /* gallery_enter.png */; };
 		EDC999321A42ACE10078F75E /* test1.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC999311A42ACE10078F75E /* test1.png */; };
+		EDD4F16B1A5A927500941632 /* ZTestSthTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD4F16A1A5A927500941632 /* ZTestSthTwoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -297,12 +301,17 @@
 		D7E96F9A19D7FDB500C0EAB2 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test.png; path = Class/testMemory/test.png; sourceTree = "<group>"; };
 		D7E96F9C19D8064D00C0EAB2 /* ZLazyLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZLazyLoadViewController.h; path = Class/testLazyLoad/ZLazyLoadViewController.h; sourceTree = "<group>"; };
 		D7E96F9D19D8064D00C0EAB2 /* ZLazyLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZLazyLoadViewController.m; path = Class/testLazyLoad/ZLazyLoadViewController.m; sourceTree = "<group>"; };
+		ED05EEFE1A53A99300CB9EC1 /* msg_left_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = msg_left_1.png; path = resource/image/msg_left_1.png; sourceTree = "<group>"; };
+		ED05EEFF1A53A99300CB9EC1 /* msg_left_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = msg_left_2.png; path = resource/image/msg_left_2.png; sourceTree = "<group>"; };
+		ED05EF001A53A99300CB9EC1 /* msg_left_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = msg_left_3.png; path = resource/image/msg_left_3.png; sourceTree = "<group>"; };
 		ED7CE24D1A514E84004C3C76 /* ZTestMemoryUseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestMemoryUseViewController.h; path = Class/testMemory/test2/ZTestMemoryUseViewController.h; sourceTree = "<group>"; };
 		ED7CE24E1A514E84004C3C76 /* ZTestMemoryUseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestMemoryUseViewController.m; path = Class/testMemory/test2/ZTestMemoryUseViewController.m; sourceTree = "<group>"; };
 		ED7CE2521A515E6F004C3C76 /* ZTestForSthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestForSthViewController.h; path = Class/testForSth/test1/ZTestForSthViewController.h; sourceTree = "<group>"; };
 		ED7CE2531A515E6F004C3C76 /* ZTestForSthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestForSthViewController.m; path = Class/testForSth/test1/ZTestForSthViewController.m; sourceTree = "<group>"; };
 		ED7CE2561A515EF9004C3C76 /* gallery_enter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gallery_enter.png; path = resource/image/gallery_enter.png; sourceTree = "<group>"; };
 		EDC999311A42ACE10078F75E /* test1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test1.png; path = Class/testMemory/test1.png; sourceTree = "<group>"; };
+		EDD4F1691A5A927500941632 /* ZTestSthTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestSthTwoViewController.h; path = Class/testForSth/test1/ZTestSthTwoViewController.h; sourceTree = "<group>"; };
+		EDD4F16A1A5A927500941632 /* ZTestSthTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestSthTwoViewController.m; path = Class/testForSth/test1/ZTestSthTwoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -540,6 +549,9 @@
 		D78B75E419EE1E7E00247A07 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				ED05EEFE1A53A99300CB9EC1 /* msg_left_1.png */,
+				ED05EEFF1A53A99300CB9EC1 /* msg_left_2.png */,
+				ED05EF001A53A99300CB9EC1 /* msg_left_3.png */,
 				ED7CE2561A515EF9004C3C76 /* gallery_enter.png */,
 				D78B75E719EE1EEA00247A07 /* gitgit.gif */,
 			);
@@ -956,8 +968,6 @@
 			isa = PBXGroup;
 			children = (
 				ED7CE2511A515E49004C3C76 /* test1 */,
-				ED7CE2521A515E6F004C3C76 /* ZTestForSthViewController.h */,
-				ED7CE2531A515E6F004C3C76 /* ZTestForSthViewController.m */,
 			);
 			name = testForSth;
 			sourceTree = "<group>";
@@ -965,6 +975,10 @@
 		ED7CE2511A515E49004C3C76 /* test1 */ = {
 			isa = PBXGroup;
 			children = (
+				EDD4F1691A5A927500941632 /* ZTestSthTwoViewController.h */,
+				EDD4F16A1A5A927500941632 /* ZTestSthTwoViewController.m */,
+				ED7CE2521A515E6F004C3C76 /* ZTestForSthViewController.h */,
+				ED7CE2531A515E6F004C3C76 /* ZTestForSthViewController.m */,
 			);
 			name = test1;
 			sourceTree = "<group>";
@@ -1052,9 +1066,12 @@
 				D79A590619D8EBE7002FE15E /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				D79A58EF19D8EAE9002FE15E /* UMSCommentDetailController.xib in Resources */,
 				EDC999321A42ACE10078F75E /* test1.png in Resources */,
+				ED05EF011A53A99300CB9EC1 /* msg_left_1.png in Resources */,
+				ED05EF021A53A99300CB9EC1 /* msg_left_2.png in Resources */,
 				D7E96F9B19D7FDB500C0EAB2 /* test.png in Resources */,
 				D78B75E819EE1EEA00247A07 /* gitgit.gif in Resources */,
 				D76F893519CFF30B004024BF /* text.plist in Resources */,
+				ED05EF031A53A99300CB9EC1 /* msg_left_3.png in Resources */,
 				D79A58F719D8EAE9002FE15E /* UMSocialSDKResourcesNew.bundle in Resources */,
 				D79A58F119D8EAE9002FE15E /* UMSCommentInputControlleriPad.xib in Resources */,
 				D79A58F219D8EAE9002FE15E /* UMShareEditViewController.xib in Resources */,
@@ -1109,6 +1126,7 @@
 				D76F890A19CFC38E004024BF /* main.m in Sources */,
 				D7993A3B19ED162400E0E2A4 /* ZTestHookTwo.m in Sources */,
 				D79B908A19EF689A00793A8A /* ZIncrementallyImageViewController.m in Sources */,
+				EDD4F16B1A5A927500941632 /* ZTestSthTwoViewController.m in Sources */,
 				D798199F19F50B570061B902 /* ZTestTableViewGroupViewController.m in Sources */,
 				D7A282E419F0AD0400F4027E /* Person.m in Sources */,
 				D7C06AA119F6211000597D17 /* ZMacroApi.m in Sources */,

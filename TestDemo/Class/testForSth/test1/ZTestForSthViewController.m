@@ -148,10 +148,84 @@
 
 }
 
+-(void)testContextRef {
+    
+//    CGContextRef context = UIGraphicsGetCurrentContext();
+//    
+//    //画一个正方形图形 没有边框
+//    CGContextSetRGBFillColor(context, 0, 0.25, 0, 0.5);
+//    CGContextFillRect(context, CGRectMake(2, 2, 270, 270));
+//    CGContextStrokePath(context);
+//    
+//    //写文字
+//    CGContextSetLineWidth(context, 1.0);
+//    CGContextSetRGBFillColor (context,  1, 1, 1, 1.0);
+//    UIFont  *font = [UIFont boldSystemFontOfSize:11.0];
+//    [@"fangyp" drawInRect:CGRectMake(40, 40, 80, 20) withFont:font];
+//    
+//    //画一条线
+//    CGContextSetRGBStrokeColor(context, 0.5, 0.5, 0.5, 0.5);//线条颜色
+//    CGContextMoveToPoint(context, 20, 20);
+//    CGContextAddLineToPoint(context, 200,20);
+//    CGContextStrokePath(context);
+//    
+//    //画正方形边框
+//    CGContextSetRGBStrokeColor(context, 1, 1.0, 1.0, 1.0);
+//    CGContextSetLineWidth(context, 2.0);
+//    CGContextAddRect(context, CGRectMake(2, 2, 270, 270));
+//    CGContextStrokePath(context);
+//    
+//    
+//    //画方形背景颜色
+//    
+//    CGContextTranslateCTM(context, 0.0f, self.view.bounds.size.height);
+//    CGContextScaleCTM(context, 1.0f, -1.0f);
+//    UIGraphicsPushContext(context);
+//    CGContextSetLineWidth(context,320);
+//    CGContextSetRGBStrokeColor(context, 250.0/255, 250.0/255, 210.0/255, 1.0);
+//    CGContextStrokeRect(context, CGRectMake(0, 0, 320, 460));
+//    UIGraphicsPopContext();
+
+//    CGPDFDocumentCreateWithProvider(<#CGDataProviderRef provider#>)
+}
+
+-(void) startImageAnimating {
+
+    UIImageView *animationImgV = (UIImageView *)[self.view viewWithTag:100];
+    [animationImgV startAnimating];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(10, 100, 20, 20);
+    [button addTarget:self action:@selector(startImageAnimating) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    
+    UIImageView *playAni = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
+    playAni.tag = 100;
+    playAni.userInteractionEnabled = NO;
+    NSArray *_animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"msg_left_1.png"],
+                      [UIImage imageNamed:@"msg_left_2.png"],
+                      [UIImage imageNamed:@"msg_left_3.png"],
+                      nil];
+    
+    [playAni setAnimationImages:_animationImages];
+    playAni.animationDuration = 2;
+    if ([_animationImages count])
+    {
+        playAni.image = [_animationImages lastObject];
+    }
+    
+    playAni.animationRepeatCount = 0;
+    [button addSubview:playAni];
+    
+    UIButton *button1 = [UIButton buttonWithType:UIButtonTypeCustom];
+    button1.frame = CGRectMake(0, 90, 40, 40);
+    button1.backgroundColor = [UIColor clearColor];
+    [button1 addTarget:self action:@selector(startImageAnimating) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button1];
     
 }
 
