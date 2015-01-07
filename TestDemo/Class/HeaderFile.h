@@ -37,6 +37,7 @@
 //#import "ZTestAnimationTViewController.h"
 //#import "ZTestSZTextViewViewController.h"
 //#import "ZTestForSthViewController.h"
-#import "ZTestSthTwoViewController.h"
+//#import "ZTestSthTwoViewController.h"
+#import "ZTestTablViewViewController.h"
 
 #endif

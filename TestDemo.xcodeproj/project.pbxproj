@@ -104,6 +104,7 @@
 		ED05EF011A53A99300CB9EC1 /* msg_left_1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED05EEFE1A53A99300CB9EC1 /* msg_left_1.png */; };
 		ED05EF021A53A99300CB9EC1 /* msg_left_2.png in Resources */ = {isa = PBXBuildFile; fileRef = ED05EEFF1A53A99300CB9EC1 /* msg_left_2.png */; };
 		ED05EF031A53A99300CB9EC1 /* msg_left_3.png in Resources */ = {isa = PBXBuildFile; fileRef = ED05EF001A53A99300CB9EC1 /* msg_left_3.png */; };
+		ED31F5641A5CDF110008B58D /* ZTestTablViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED31F5631A5CDF110008B58D /* ZTestTablViewViewController.m */; };
 		ED7CE24F1A514E84004C3C76 /* ZTestMemoryUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7CE24E1A514E84004C3C76 /* ZTestMemoryUseViewController.m */; };
 		ED7CE2541A515E6F004C3C76 /* ZTestForSthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7CE2531A515E6F004C3C76 /* ZTestForSthViewController.m */; };
 		ED7CE2571A515EF9004C3C76 /* gallery_enter.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7CE2561A515EF9004C3C76 /* gallery_enter.png */; };
@@ -304,6 +305,8 @@
 		ED05EEFE1A53A99300CB9EC1 /* msg_left_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = msg_left_1.png; path = resource/image/msg_left_1.png; sourceTree = "<group>"; };
 		ED05EEFF1A53A99300CB9EC1 /* msg_left_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = msg_left_2.png; path = resource/image/msg_left_2.png; sourceTree = "<group>"; };
 		ED05EF001A53A99300CB9EC1 /* msg_left_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = msg_left_3.png; path = resource/image/msg_left_3.png; sourceTree = "<group>"; };
+		ED31F5621A5CDF110008B58D /* ZTestTablViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestTablViewViewController.h; path = Class/testForSth/test1/ZTestTablViewViewController.h; sourceTree = "<group>"; };
+		ED31F5631A5CDF110008B58D /* ZTestTablViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestTablViewViewController.m; path = Class/testForSth/test1/ZTestTablViewViewController.m; sourceTree = "<group>"; };
 		ED7CE24D1A514E84004C3C76 /* ZTestMemoryUseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestMemoryUseViewController.h; path = Class/testMemory/test2/ZTestMemoryUseViewController.h; sourceTree = "<group>"; };
 		ED7CE24E1A514E84004C3C76 /* ZTestMemoryUseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestMemoryUseViewController.m; path = Class/testMemory/test2/ZTestMemoryUseViewController.m; sourceTree = "<group>"; };
 		ED7CE2521A515E6F004C3C76 /* ZTestForSthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestForSthViewController.h; path = Class/testForSth/test1/ZTestForSthViewController.h; sourceTree = "<group>"; };
@@ -979,6 +982,8 @@
 				EDD4F16A1A5A927500941632 /* ZTestSthTwoViewController.m */,
 				ED7CE2521A515E6F004C3C76 /* ZTestForSthViewController.h */,
 				ED7CE2531A515E6F004C3C76 /* ZTestForSthViewController.m */,
+				ED31F5621A5CDF110008B58D /* ZTestTablViewViewController.h */,
+				ED31F5631A5CDF110008B58D /* ZTestTablViewViewController.m */,
 			);
 			name = test1;
 			sourceTree = "<group>";
@@ -1114,6 +1119,7 @@
 				D7E96F9919D7FD5C00C0EAB2 /* ZTestMemroyView.m in Sources */,
 				D798198919F4A9EF0061B902 /* ZTestTemperatures.m in Sources */,
 				D798198D19F4AB060061B902 /* ZZTestTemperaturesViewController.m in Sources */,
+				ED31F5641A5CDF110008B58D /* ZTestTablViewViewController.m in Sources */,
 				D78B75EB19EE1FBA00247A07 /* ZGifView.m in Sources */,
 				D78B75E119EE1E0D00247A07 /* ZTestGifPictureViewController.m in Sources */,
 				D7993A3019ECBB4D00E0E2A4 /* ZTestCell.m in Sources */,
