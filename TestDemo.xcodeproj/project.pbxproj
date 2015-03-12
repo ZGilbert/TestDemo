@@ -114,6 +114,8 @@
 		EDC999321A42ACE10078F75E /* test1.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC999311A42ACE10078F75E /* test1.png */; };
 		EDD4F16B1A5A927500941632 /* ZTestSthTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD4F16A1A5A927500941632 /* ZTestSthTwoViewController.m */; };
 		EDE27C441AAFEFA6003F8C7B /* ZTestLLDBViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EDE27C431AAFEFA6003F8C7B /* ZTestLLDBViewController.mm */; };
+		EDF088D61AB135D90021A831 /* ZBasicBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF088D51AB135D90021A831 /* ZBasicBlockViewController.m */; };
+		EDF088D91AB137E20021A831 /* ZOBJ1.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF088D81AB137E20021A831 /* ZOBJ1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -326,6 +328,10 @@
 		EDD4F16A1A5A927500941632 /* ZTestSthTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestSthTwoViewController.m; path = Class/testForSth/test1/ZTestSthTwoViewController.m; sourceTree = "<group>"; };
 		EDE27C421AAFEFA6003F8C7B /* ZTestLLDBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestLLDBViewController.h; path = Class/testlldb/ZTestLLDBViewController.h; sourceTree = "<group>"; };
 		EDE27C431AAFEFA6003F8C7B /* ZTestLLDBViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ZTestLLDBViewController.mm; path = Class/testlldb/ZTestLLDBViewController.mm; sourceTree = "<group>"; };
+		EDF088D41AB135D90021A831 /* ZBasicBlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZBasicBlockViewController.h; path = Class/testBlock/ZBasicBlockViewController.h; sourceTree = "<group>"; };
+		EDF088D51AB135D90021A831 /* ZBasicBlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZBasicBlockViewController.m; path = Class/testBlock/ZBasicBlockViewController.m; sourceTree = "<group>"; };
+		EDF088D71AB137E20021A831 /* ZOBJ1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZOBJ1.h; path = Class/testBlock/ZOBJ1.h; sourceTree = "<group>"; };
+		EDF088D81AB137E20021A831 /* ZOBJ1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZOBJ1.m; path = Class/testBlock/ZOBJ1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -520,6 +526,10 @@
 				D76F893419CFF30B004024BF /* text.plist */,
 				D79A591519D930B1002FE15E /* ZThirdTableViewController.h */,
 				D79A591619D930B1002FE15E /* ZThirdTableViewController.m */,
+				EDF088D41AB135D90021A831 /* ZBasicBlockViewController.h */,
+				EDF088D51AB135D90021A831 /* ZBasicBlockViewController.m */,
+				EDF088D71AB137E20021A831 /* ZOBJ1.h */,
+				EDF088D81AB137E20021A831 /* ZOBJ1.m */,
 			);
 			name = testBlock;
 			sourceTree = "<group>";
@@ -1182,7 +1192,9 @@
 				D7A1475B19EBB707005B04DE /* ZItemsSource.m in Sources */,
 				D76F893019CFC42B004024BF /* ZTestBlockViewController.m in Sources */,
 				D7993A4219ED20C900E0E2A4 /* ZTestHookForPackageCell.m in Sources */,
+				EDF088D91AB137E20021A831 /* ZOBJ1.m in Sources */,
 				D700A5F219EDFF0F00D1A6F4 /* NSArray+Hook.m in Sources */,
+				EDF088D61AB135D90021A831 /* ZBasicBlockViewController.m in Sources */,
 				ED7CE2541A515E6F004C3C76 /* ZTestForSthViewController.m in Sources */,
 				D7D30F5919EFCFC60011A4C1 /* Model.xcdatamodeld in Sources */,
 				ED27E7921AB042DB00C2C9EB /* ZTestOC.mm in Sources */,

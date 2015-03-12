@@ -165,7 +165,9 @@
     __block UINavigationController *navi = self.navigationController;
 
     [second cancelClicked:^(BOOL back) {
-        [navi popViewControllerAnimated:YES];
+        if (back) {
+            [navi popViewControllerAnimated:YES];
+        }
     }];
     
     //手动实现navigation跳转动画

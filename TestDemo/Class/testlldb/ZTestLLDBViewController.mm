@@ -39,8 +39,6 @@
     test.setVar(100);
     ZTestOC *t = [[ZTestOC alloc] init];
     [t setVar:100];
-    
-    
 }
 
 -(void) showWebView
