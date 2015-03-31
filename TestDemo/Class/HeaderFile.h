@@ -9,7 +9,7 @@
 #ifndef TestDemo_HeaderFile_h
 #define TestDemo_HeaderFile_h
 
-#import "ZTestBlockViewController.h"
+//#import "ZTestBlockViewController.h"
 //#import "ZTestMemoryViewController.h"
 //#import "ZLazyLoadViewController.h"
 //#import "UMSocial.h"
@@ -34,7 +34,7 @@
 //#import "ZZTestTemperaturesViewController.h"
 //#import "ZTestAnimationViewController.h"
 //#import "ZTestConCurrentViewController.h"
-//#import "ZTestAnimationTViewController.h"
+#import "ZTestAnimationTViewController.h"
 //#import "ZTestSZTextViewViewController.h"
 //#import "ZTestForSthViewController.h"
 //#import "ZTestSthTwoViewController.h"

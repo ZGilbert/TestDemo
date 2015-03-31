@@ -62,11 +62,28 @@
     tst.backgroundColor = [UIColor redColor];
     tst.tag = 100;
     [self.view addSubview:tst];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+     //Set Search Button Title to Done 2
+//    for (UIView *searchBarSubview in [self.searchBar subviews]) {
+//        if ([searchBarSubview conformsToProtocol:@protocol(UITextInputTraits)]) {
+//            // Before iOS 7.0 5
+//            @try { 6 [(UITextField *)searchBarSubview setReturnKeyType:UIReturnKeyDone];
+//                [(UITextField *)searchBarSubview setKeyboardAppearance:UIKeyboardAppearanceAlert];
+//                @catch (NSException * e) {10 // ignore exception11 }12 }
+//                    else {13
+//                        // iOS 7.014
+//                        for(UIView *subSubView in [searchBarSubview subviews]) {
+//                            if([subSubView conformsToProtocol:@protocol(UITextInputTraits)]) {
+//                                @try {17 [(UITextField *)subSubView setReturnKeyType:UIReturnKeyDone];
+//                                    //[(UITextField *)searchBarSubview setKeyboardAppearance:UIKeyboardAppearanceAlert];19 }20
+//                                    @catch (NSException * e) {21 // ignore exception22 }23 }24 }25 }26 }
+    
 }
 
 /*

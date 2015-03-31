@@ -24,7 +24,7 @@
 //    [self.view addSubview:imag];
     
 //    NSString *path = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"png"];
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"png"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"gitgit" ofType:@"gif"];
 //    NSArray *array = [[NSBundle mainBundle] pathsForResourcesOfType:@"gif" inDirectory:nil];
 //    array = nil;
     NSURL *url = [NSURL fileURLWithPath:path];

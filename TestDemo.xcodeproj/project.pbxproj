@@ -112,6 +112,9 @@
 		ED7CE2541A515E6F004C3C76 /* ZTestForSthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7CE2531A515E6F004C3C76 /* ZTestForSthViewController.m */; };
 		ED7CE2571A515EF9004C3C76 /* gallery_enter.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7CE2561A515EF9004C3C76 /* gallery_enter.png */; };
 		EDC999321A42ACE10078F75E /* test1.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC999311A42ACE10078F75E /* test1.png */; };
+		EDD2D7241AC8E92E00E75865 /* ZTestCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD2D7221AC8E92E00E75865 /* ZTestCameraViewController.m */; };
+		EDD2D7251AC8E92E00E75865 /* ZTestCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDD2D7231AC8E92E00E75865 /* ZTestCameraViewController.xib */; };
+		EDD2D7271AC8EA3600E75865 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD2D7261AC8EA3600E75865 /* AVFoundation.framework */; };
 		EDD4F16B1A5A927500941632 /* ZTestSthTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD4F16A1A5A927500941632 /* ZTestSthTwoViewController.m */; };
 		EDE27C441AAFEFA6003F8C7B /* ZTestLLDBViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EDE27C431AAFEFA6003F8C7B /* ZTestLLDBViewController.mm */; };
 		EDF088D61AB135D90021A831 /* ZBasicBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF088D51AB135D90021A831 /* ZBasicBlockViewController.m */; };
@@ -324,6 +327,10 @@
 		ED7CE2531A515E6F004C3C76 /* ZTestForSthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestForSthViewController.m; path = Class/testForSth/test1/ZTestForSthViewController.m; sourceTree = "<group>"; };
 		ED7CE2561A515EF9004C3C76 /* gallery_enter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gallery_enter.png; path = resource/image/gallery_enter.png; sourceTree = "<group>"; };
 		EDC999311A42ACE10078F75E /* test1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test1.png; path = Class/testMemory/test1.png; sourceTree = "<group>"; };
+		EDD2D7211AC8E92E00E75865 /* ZTestCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestCameraViewController.h; path = Class/testCamera/ZTestCameraViewController.h; sourceTree = "<group>"; };
+		EDD2D7221AC8E92E00E75865 /* ZTestCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestCameraViewController.m; path = Class/testCamera/ZTestCameraViewController.m; sourceTree = "<group>"; };
+		EDD2D7231AC8E92E00E75865 /* ZTestCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ZTestCameraViewController.xib; path = Class/testCamera/ZTestCameraViewController.xib; sourceTree = "<group>"; };
+		EDD2D7261AC8EA3600E75865 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		EDD4F1691A5A927500941632 /* ZTestSthTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestSthTwoViewController.h; path = Class/testForSth/test1/ZTestSthTwoViewController.h; sourceTree = "<group>"; };
 		EDD4F16A1A5A927500941632 /* ZTestSthTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestSthTwoViewController.m; path = Class/testForSth/test1/ZTestSthTwoViewController.m; sourceTree = "<group>"; };
 		EDE27C421AAFEFA6003F8C7B /* ZTestLLDBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestLLDBViewController.h; path = Class/testlldb/ZTestLLDBViewController.h; sourceTree = "<group>"; };
@@ -339,6 +346,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDD2D7271AC8EA3600E75865 /* AVFoundation.framework in Frameworks */,
 				D798199819F4F8820061B902 /* AddressBook.framework in Frameworks */,
 				D744E2AA19EF9BD40054EADB /* CoreData.framework in Frameworks */,
 				D79A591419D8FE14002FE15E /* libz.dylib in Frameworks */,
@@ -427,6 +435,7 @@
 		D76F88FC19CFC38E004024BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EDD2D7261AC8EA3600E75865 /* AVFoundation.framework */,
 				D798199419F4F7A00061B902 /* AddressBook.framework */,
 				D798199519F4F7A00061B902 /* AddressBookUI.framework */,
 				D744E2A919EF9BD40054EADB /* CoreData.framework */,
@@ -487,6 +496,7 @@
 		D76F892C19CFC3CB004024BF /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				EDD2D71A1AC8E6CC00E75865 /* testCamera */,
 				EDE27C411AAFEF63003F8C7B /* testlldb */,
 				D78B75E319EE1E6900247A07 /* resource */,
 				ED7CE2501A515E3A004C3C76 /* testForSth */,
@@ -1010,6 +1020,16 @@
 			name = test1;
 			sourceTree = "<group>";
 		};
+		EDD2D71A1AC8E6CC00E75865 /* testCamera */ = {
+			isa = PBXGroup;
+			children = (
+				EDD2D7211AC8E92E00E75865 /* ZTestCameraViewController.h */,
+				EDD2D7221AC8E92E00E75865 /* ZTestCameraViewController.m */,
+				EDD2D7231AC8E92E00E75865 /* ZTestCameraViewController.xib */,
+			);
+			name = testCamera;
+			sourceTree = "<group>";
+		};
 		EDE27C411AAFEF63003F8C7B /* testlldb */ = {
 			isa = PBXGroup;
 			children = (
@@ -1121,6 +1141,7 @@
 				ED7CE2571A515EF9004C3C76 /* gallery_enter.png in Resources */,
 				D79A58ED19D8EAE9002FE15E /* UMSocialLocalizable.strings in Resources */,
 				D76F890819CFC38E004024BF /* InfoPlist.strings in Resources */,
+				EDD2D7251AC8E92E00E75865 /* ZTestCameraViewController.xib in Resources */,
 				D76F891019CFC38E004024BF /* Images.xcassets in Resources */,
 				D79A58F419D8EAE9002FE15E /* UMSLoginViewController.xib in Resources */,
 			);
@@ -1185,6 +1206,7 @@
 				D78B75EE19EE3FE200247A07 /* ZTestStatusBarViewController.m in Sources */,
 				D7A1475819EBA9A8005B04DE /* ZTestPackageCellViewController.m in Sources */,
 				D7E96F9619D7FCD700C0EAB2 /* ZTestMemoryViewController.m in Sources */,
+				EDD2D7241AC8E92E00E75865 /* ZTestCameraViewController.m in Sources */,
 				D7A1474E19EB9A95005B04DE /* ZArrayDatasource.m in Sources */,
 				D799D82D19E93562009FEE7B /* ZTestCALayerViewController.m in Sources */,
 				D7993A3719ED0DBB00E0E2A4 /* ZTestHook.m in Sources */,
@@ -1337,6 +1359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TestDemo/UMSocial_Sdk_4.1/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
@@ -1344,6 +1367,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestDemo/TestDemo-Prefix.pch";
 				INFOPLIST_FILE = "TestDemo/TestDemo-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TestDemo/UMSocial_Sdk_4.1",
@@ -1351,6 +1375,8 @@
 					"$(PROJECT_DIR)/TestDemo/UMSocial_Sdk_4.1/UMSocial_Sdk_Extra_Frameworks/Wechat",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestDemo/TestDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1360,6 +1386,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TestDemo/UMSocial_Sdk_4.1/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
@@ -1367,6 +1394,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestDemo/TestDemo-Prefix.pch";
 				INFOPLIST_FILE = "TestDemo/TestDemo-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TestDemo/UMSocial_Sdk_4.1",
@@ -1374,6 +1402,7 @@
 					"$(PROJECT_DIR)/TestDemo/UMSocial_Sdk_4.1/UMSocial_Sdk_Extra_Frameworks/Wechat",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestDemo/TestDemo-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
