@@ -1041,11 +1041,19 @@
 		EDCCF84C1ACCDF0C00691EB0 /* testNotification */ = {
 			isa = PBXGroup;
 			children = (
+				EDCCF8551ACD0FC900691EB0 /* testMore */,
 				EDCCF84D1ACCDFAB00691EB0 /* ZTestNotificationViewController.h */,
 				EDCCF84E1ACCDFAB00691EB0 /* ZTestNotificationViewController.m */,
 				EDCCF84F1ACCDFAB00691EB0 /* ZTestNotificationViewController.xib */,
 			);
 			name = testNotification;
+			sourceTree = "<group>";
+		};
+		EDCCF8551ACD0FC900691EB0 /* testMore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = testMore;
 			sourceTree = "<group>";
 		};
 		EDD2D71A1AC8E6CC00E75865 /* testCamera */ = {
