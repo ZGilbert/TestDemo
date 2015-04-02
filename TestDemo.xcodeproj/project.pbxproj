@@ -112,6 +112,8 @@
 		ED7CE2541A515E6F004C3C76 /* ZTestForSthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7CE2531A515E6F004C3C76 /* ZTestForSthViewController.m */; };
 		ED7CE2571A515EF9004C3C76 /* gallery_enter.png in Resources */ = {isa = PBXBuildFile; fileRef = ED7CE2561A515EF9004C3C76 /* gallery_enter.png */; };
 		EDC999321A42ACE10078F75E /* test1.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC999311A42ACE10078F75E /* test1.png */; };
+		EDCCF8501ACCDFAB00691EB0 /* ZTestNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCCF84E1ACCDFAB00691EB0 /* ZTestNotificationViewController.m */; };
+		EDCCF8511ACCDFAB00691EB0 /* ZTestNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDCCF84F1ACCDFAB00691EB0 /* ZTestNotificationViewController.xib */; };
 		EDD2D7241AC8E92E00E75865 /* ZTestCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD2D7221AC8E92E00E75865 /* ZTestCameraViewController.m */; };
 		EDD2D7251AC8E92E00E75865 /* ZTestCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDD2D7231AC8E92E00E75865 /* ZTestCameraViewController.xib */; };
 		EDD2D7271AC8EA3600E75865 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD2D7261AC8EA3600E75865 /* AVFoundation.framework */; };
@@ -331,6 +333,9 @@
 		ED7CE2531A515E6F004C3C76 /* ZTestForSthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestForSthViewController.m; path = Class/testForSth/test1/ZTestForSthViewController.m; sourceTree = "<group>"; };
 		ED7CE2561A515EF9004C3C76 /* gallery_enter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gallery_enter.png; path = resource/image/gallery_enter.png; sourceTree = "<group>"; };
 		EDC999311A42ACE10078F75E /* test1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test1.png; path = Class/testMemory/test1.png; sourceTree = "<group>"; };
+		EDCCF84D1ACCDFAB00691EB0 /* ZTestNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestNotificationViewController.h; path = Class/testNotification/ZTestNotificationViewController.h; sourceTree = "<group>"; };
+		EDCCF84E1ACCDFAB00691EB0 /* ZTestNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestNotificationViewController.m; path = Class/testNotification/ZTestNotificationViewController.m; sourceTree = "<group>"; };
+		EDCCF84F1ACCDFAB00691EB0 /* ZTestNotificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ZTestNotificationViewController.xib; path = Class/testNotification/ZTestNotificationViewController.xib; sourceTree = "<group>"; };
 		EDD2D7211AC8E92E00E75865 /* ZTestCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestCameraViewController.h; path = Class/testCamera/ZTestCameraViewController.h; sourceTree = "<group>"; };
 		EDD2D7221AC8E92E00E75865 /* ZTestCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestCameraViewController.m; path = Class/testCamera/ZTestCameraViewController.m; sourceTree = "<group>"; };
 		EDD2D7231AC8E92E00E75865 /* ZTestCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ZTestCameraViewController.xib; path = Class/testCamera/ZTestCameraViewController.xib; sourceTree = "<group>"; };
@@ -507,6 +512,7 @@
 		D76F892C19CFC3CB004024BF /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				EDCCF84C1ACCDF0C00691EB0 /* testNotification */,
 				EDDFA7A11ACB81CB00DF42DB /* testKVO */,
 				EDD2D71A1AC8E6CC00E75865 /* testCamera */,
 				EDE27C411AAFEF63003F8C7B /* testlldb */,
@@ -1032,6 +1038,16 @@
 			name = test1;
 			sourceTree = "<group>";
 		};
+		EDCCF84C1ACCDF0C00691EB0 /* testNotification */ = {
+			isa = PBXGroup;
+			children = (
+				EDCCF84D1ACCDFAB00691EB0 /* ZTestNotificationViewController.h */,
+				EDCCF84E1ACCDFAB00691EB0 /* ZTestNotificationViewController.m */,
+				EDCCF84F1ACCDFAB00691EB0 /* ZTestNotificationViewController.xib */,
+			);
+			name = testNotification;
+			sourceTree = "<group>";
+		};
 		EDD2D71A1AC8E6CC00E75865 /* testCamera */ = {
 			isa = PBXGroup;
 			children = (
@@ -1168,6 +1184,7 @@
 				D79A58ED19D8EAE9002FE15E /* UMSocialLocalizable.strings in Resources */,
 				D76F890819CFC38E004024BF /* InfoPlist.strings in Resources */,
 				EDDFA7AF1ACBCA2F00DF42DB /* ZTestKVOViewController.xib in Resources */,
+				EDCCF8511ACCDFAB00691EB0 /* ZTestNotificationViewController.xib in Resources */,
 				EDD2D7251AC8E92E00E75865 /* ZTestCameraViewController.xib in Resources */,
 				D76F891019CFC38E004024BF /* Images.xcassets in Resources */,
 				D79A58F419D8EAE9002FE15E /* UMSLoginViewController.xib in Resources */,
@@ -1261,6 +1278,7 @@
 				D744E29819EF92950054EADB /* ZTestAnimationViewController.m in Sources */,
 				D79FCD3E19EB6EE600C44EF9 /* ZTestAnimateCALayerViewController.m in Sources */,
 				D79819A319F50BA20061B902 /* ZTableViewOneCell.m in Sources */,
+				EDCCF8501ACCDFAB00691EB0 /* ZTestNotificationViewController.m in Sources */,
 				D7A1475219EBA3BB005B04DE /* ZTestPackageCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

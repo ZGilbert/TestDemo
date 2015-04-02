@@ -41,7 +41,7 @@
 //#import "ZTestTablViewViewController.h"
 //#import "ZTestLLDBViewController.h"
 //#import "ZBasicBlockViewController.h"
-#import "ZTestKVOViewController.h"
-
+//#import "ZTestKVOViewController.h"
+#import "ZTestNotificationViewController.h"
 
 #endif
