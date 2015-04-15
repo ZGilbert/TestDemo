@@ -21,7 +21,7 @@
 //#import "ZTestCALayerViewController.h"
 //#import "ZTestAnimateCALayerViewController.h"
 //#import "ZTestCustomCALayerViewController.h"
-//#import "ZTestPackageCellViewController.h"
+#import "ZTestPackageCellViewController.h"
 //#import "ZTestTableViewGroupViewController.h"
 //#import "ZHookHeaderFile.h"
 //#import "ZTestNSArrayHookViewController.h"
@@ -42,6 +42,6 @@
 //#import "ZTestLLDBViewController.h"
 //#import "ZBasicBlockViewController.h"
 //#import "ZTestKVOViewController.h"
-#import "ZTestNotificationViewController.h"
+//#import "ZTestNotificationViewController.h"
 
 #endif

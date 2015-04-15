@@ -118,6 +118,10 @@
 		EDD2D7251AC8E92E00E75865 /* ZTestCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDD2D7231AC8E92E00E75865 /* ZTestCameraViewController.xib */; };
 		EDD2D7271AC8EA3600E75865 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD2D7261AC8EA3600E75865 /* AVFoundation.framework */; };
 		EDD4F16B1A5A927500941632 /* ZTestSthTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD4F16A1A5A927500941632 /* ZTestSthTwoViewController.m */; };
+		EDDBA8581ADCA75600442FB9 /* ZTestDataObjViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA8561ADCA75600442FB9 /* ZTestDataObjViewController.m */; };
+		EDDBA8591ADCA75600442FB9 /* ZTestDataObjViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDDBA8571ADCA75600442FB9 /* ZTestDataObjViewController.xib */; };
+		EDDBA85C1ADCAB2A00442FB9 /* ZDataObj.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA85B1ADCAB2A00442FB9 /* ZDataObj.m */; };
+		EDDBA85F1ADCAB9F00442FB9 /* ZPublicTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBA85E1ADCAB9F00442FB9 /* ZPublicTableView.m */; };
 		EDDFA7A41ACB97C100DF42DB /* NSObject+ZKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDFA7A31ACB97C100DF42DB /* NSObject+ZKVO.m */; };
 		EDDFA7AE1ACBCA2F00DF42DB /* ZTestKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDFA7AC1ACBCA2F00DF42DB /* ZTestKVOViewController.m */; };
 		EDDFA7AF1ACBCA2F00DF42DB /* ZTestKVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDDFA7AD1ACBCA2F00DF42DB /* ZTestKVOViewController.xib */; };
@@ -342,6 +346,13 @@
 		EDD2D7261AC8EA3600E75865 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		EDD4F1691A5A927500941632 /* ZTestSthTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestSthTwoViewController.h; path = Class/testForSth/test1/ZTestSthTwoViewController.h; sourceTree = "<group>"; };
 		EDD4F16A1A5A927500941632 /* ZTestSthTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestSthTwoViewController.m; path = Class/testForSth/test1/ZTestSthTwoViewController.m; sourceTree = "<group>"; };
+		EDDBA8551ADCA75600442FB9 /* ZTestDataObjViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestDataObjViewController.h; path = Class/testPackageCell/test2/ZTestDataObjViewController.h; sourceTree = "<group>"; };
+		EDDBA8561ADCA75600442FB9 /* ZTestDataObjViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestDataObjViewController.m; path = Class/testPackageCell/test2/ZTestDataObjViewController.m; sourceTree = "<group>"; };
+		EDDBA8571ADCA75600442FB9 /* ZTestDataObjViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ZTestDataObjViewController.xib; path = Class/testPackageCell/test2/ZTestDataObjViewController.xib; sourceTree = "<group>"; };
+		EDDBA85A1ADCAB2A00442FB9 /* ZDataObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZDataObj.h; path = Class/testPackageCell/test2/ZDataObj.h; sourceTree = "<group>"; };
+		EDDBA85B1ADCAB2A00442FB9 /* ZDataObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZDataObj.m; path = Class/testPackageCell/test2/ZDataObj.m; sourceTree = "<group>"; };
+		EDDBA85D1ADCAB9F00442FB9 /* ZPublicTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZPublicTableView.h; path = Class/testPackageCell/test2/ZPublicTableView.h; sourceTree = "<group>"; };
+		EDDBA85E1ADCAB9F00442FB9 /* ZPublicTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZPublicTableView.m; path = Class/testPackageCell/test2/ZPublicTableView.m; sourceTree = "<group>"; };
 		EDDFA7A21ACB97C100DF42DB /* NSObject+ZKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+ZKVO.h"; path = "Class/testKVO/NSObject+ZKVO.h"; sourceTree = "<group>"; };
 		EDDFA7A31ACB97C100DF42DB /* NSObject+ZKVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+ZKVO.m"; path = "Class/testKVO/NSObject+ZKVO.m"; sourceTree = "<group>"; };
 		EDDFA7AB1ACBCA2F00DF42DB /* ZTestKVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestKVOViewController.h; path = Class/testKVO/ZTestKVOViewController.h; sourceTree = "<group>"; };
@@ -854,16 +865,8 @@
 		D7A1474F19EB9A99005B04DE /* testPackageCell */ = {
 			isa = PBXGroup;
 			children = (
-				D7A1475619EBA9A8005B04DE /* ZTestPackageCellViewController.h */,
-				D7A1475719EBA9A8005B04DE /* ZTestPackageCellViewController.m */,
-				D7A1474C19EB9A95005B04DE /* ZArrayDatasource.h */,
-				D7A1474D19EB9A95005B04DE /* ZArrayDatasource.m */,
-				D7A1475019EBA3BB005B04DE /* ZTestPackageCell.h */,
-				D7A1475119EBA3BB005B04DE /* ZTestPackageCell.m */,
-				D7A1475919EBB707005B04DE /* ZItemsSource.h */,
-				D7A1475A19EBB707005B04DE /* ZItemsSource.m */,
-				D7993A2E19ECBB4D00E0E2A4 /* ZTestCell.h */,
-				D7993A2F19ECBB4D00E0E2A4 /* ZTestCell.m */,
+				EDDBA8541ADCA72300442FB9 /* test1 */,
+				EDDBA8531ADCA71A00442FB9 /* test2 */,
 			);
 			name = testPackageCell;
 			sourceTree = "<group>";
@@ -1066,6 +1069,37 @@
 			name = testCamera;
 			sourceTree = "<group>";
 		};
+		EDDBA8531ADCA71A00442FB9 /* test2 */ = {
+			isa = PBXGroup;
+			children = (
+				EDDBA8551ADCA75600442FB9 /* ZTestDataObjViewController.h */,
+				EDDBA8561ADCA75600442FB9 /* ZTestDataObjViewController.m */,
+				EDDBA8571ADCA75600442FB9 /* ZTestDataObjViewController.xib */,
+				EDDBA85A1ADCAB2A00442FB9 /* ZDataObj.h */,
+				EDDBA85B1ADCAB2A00442FB9 /* ZDataObj.m */,
+				EDDBA85D1ADCAB9F00442FB9 /* ZPublicTableView.h */,
+				EDDBA85E1ADCAB9F00442FB9 /* ZPublicTableView.m */,
+			);
+			name = test2;
+			sourceTree = "<group>";
+		};
+		EDDBA8541ADCA72300442FB9 /* test1 */ = {
+			isa = PBXGroup;
+			children = (
+				D7A1475619EBA9A8005B04DE /* ZTestPackageCellViewController.h */,
+				D7A1475719EBA9A8005B04DE /* ZTestPackageCellViewController.m */,
+				D7A1474C19EB9A95005B04DE /* ZArrayDatasource.h */,
+				D7A1474D19EB9A95005B04DE /* ZArrayDatasource.m */,
+				D7A1475019EBA3BB005B04DE /* ZTestPackageCell.h */,
+				D7A1475119EBA3BB005B04DE /* ZTestPackageCell.m */,
+				D7A1475919EBB707005B04DE /* ZItemsSource.h */,
+				D7A1475A19EBB707005B04DE /* ZItemsSource.m */,
+				D7993A2E19ECBB4D00E0E2A4 /* ZTestCell.h */,
+				D7993A2F19ECBB4D00E0E2A4 /* ZTestCell.m */,
+			);
+			name = test1;
+			sourceTree = "<group>";
+		};
 		EDDFA7A11ACB81CB00DF42DB /* testKVO */ = {
 			isa = PBXGroup;
 			children = (
@@ -1178,6 +1212,7 @@
 				D79A58EF19D8EAE9002FE15E /* UMSCommentDetailController.xib in Resources */,
 				EDC999321A42ACE10078F75E /* test1.png in Resources */,
 				ED05EF011A53A99300CB9EC1 /* msg_left_1.png in Resources */,
+				EDDBA8591ADCA75600442FB9 /* ZTestDataObjViewController.xib in Resources */,
 				ED05EF021A53A99300CB9EC1 /* msg_left_2.png in Resources */,
 				D7E96F9B19D7FDB500C0EAB2 /* test.png in Resources */,
 				D78B75E819EE1EEA00247A07 /* gitgit.gif in Resources */,
@@ -1222,6 +1257,7 @@
 				D7E96F9E19D8064D00C0EAB2 /* ZLazyLoadViewController.m in Sources */,
 				ED7CE24F1A514E84004C3C76 /* ZTestMemoryUseViewController.m in Sources */,
 				D7A282EF19F0C2AA00F4027E /* ZTestCDUseDelegateController.m in Sources */,
+				EDDBA85C1ADCAB2A00442FB9 /* ZDataObj.m in Sources */,
 				D79FCD4119EB6F3100C44EF9 /* ZCustomLayer.m in Sources */,
 				D79AB31919DA89FE00C30C05 /* ZtestOperatorViewController.m in Sources */,
 				D7A282E119F0AD0300F4027E /* Card.m in Sources */,
@@ -1232,6 +1268,7 @@
 				D798198D19F4AB060061B902 /* ZZTestTemperaturesViewController.m in Sources */,
 				ED31F5641A5CDF110008B58D /* ZTestTablViewViewController.m in Sources */,
 				D78B75EB19EE1FBA00247A07 /* ZGifView.m in Sources */,
+				EDDBA8581ADCA75600442FB9 /* ZTestDataObjViewController.m in Sources */,
 				D78B75E119EE1E0D00247A07 /* ZTestGifPictureViewController.m in Sources */,
 				D7993A3019ECBB4D00E0E2A4 /* ZTestCell.m in Sources */,
 				D79A591719D930B1002FE15E /* ZThirdTableViewController.m in Sources */,
@@ -1266,6 +1303,7 @@
 				D7993A3719ED0DBB00E0E2A4 /* ZTestHook.m in Sources */,
 				D7993A3E19ED183200E0E2A4 /* ZActionMethod.m in Sources */,
 				D7A1475B19EBB707005B04DE /* ZItemsSource.m in Sources */,
+				EDDBA85F1ADCAB9F00442FB9 /* ZPublicTableView.m in Sources */,
 				D76F893019CFC42B004024BF /* ZTestBlockViewController.m in Sources */,
 				D7993A4219ED20C900E0E2A4 /* ZTestHookForPackageCell.m in Sources */,
 				EDF088D91AB137E20021A831 /* ZOBJ1.m in Sources */,
