@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52C564B11AD3EF730059FD10 /* ZTestFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C564B01AD3EF730059FD10 /* ZTestFourViewController.m */; };
+		52C564B41AD3F0850059FD10 /* ZCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C564B31AD3F0850059FD10 /* ZCustomView.m */; };
 		D700A5F219EDFF0F00D1A6F4 /* NSArray+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = D700A5F119EDFF0F00D1A6F4 /* NSArray+Hook.m */; };
 		D707C6161A2FF39F00E1239B /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = D707C6151A2FF39F00E1239B /* OpenGLView.m */; };
 		D72EFAAE19EE004D005C4D23 /* ZTestNSArrayHookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D72EFAAD19EE004D005C4D23 /* ZTestNSArrayHookViewController.m */; };
@@ -142,6 +144,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52C564AF1AD3EF730059FD10 /* ZTestFourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestFourViewController.h; path = Class/testHook/ZTestFourViewController.h; sourceTree = "<group>"; };
+		52C564B01AD3EF730059FD10 /* ZTestFourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestFourViewController.m; path = Class/testHook/ZTestFourViewController.m; sourceTree = "<group>"; };
+		52C564B21AD3F0850059FD10 /* ZCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZCustomView.h; path = Class/testHook/ZCustomView.h; sourceTree = "<group>"; };
+		52C564B31AD3F0850059FD10 /* ZCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZCustomView.m; path = Class/testHook/ZCustomView.m; sourceTree = "<group>"; };
 		D700A5F019EDFF0F00D1A6F4 /* NSArray+Hook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Hook.h"; path = "Class/testHook/NSArray+Hook.h"; sourceTree = "<group>"; };
 		D700A5F119EDFF0F00D1A6F4 /* NSArray+Hook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Hook.m"; path = "Class/testHook/NSArray+Hook.m"; sourceTree = "<group>"; };
 		D707C6141A2FF39F00E1239B /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLView.h; path = Class/testOpenGL/OpenGLView.h; sourceTree = "<group>"; };
@@ -403,6 +409,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52C564AE1AD3EF3E0059FD10 /* four */ = {
+			isa = PBXGroup;
+			children = (
+				52C564AF1AD3EF730059FD10 /* ZTestFourViewController.h */,
+				52C564B01AD3EF730059FD10 /* ZTestFourViewController.m */,
+				52C564B21AD3F0850059FD10 /* ZCustomView.h */,
+				52C564B31AD3F0850059FD10 /* ZCustomView.m */,
+			);
+			name = four;
+			sourceTree = "<group>";
+		};
 		D707C6131A2FF37500E1239B /* testOpenGL */ = {
 			isa = PBXGroup;
 			children = (
@@ -674,6 +691,7 @@
 		D7993A3419ED02E200E0E2A4 /* testHook */ = {
 			isa = PBXGroup;
 			children = (
+				52C564AE1AD3EF3E0059FD10 /* four */,
 				D7993A3819ED0F0100E0E2A4 /* ZHookHeaderFile.h */,
 				D79DEFC019EDFCF5008BFCB7 /* three */,
 				D7993A4619ED2D5200E0E2A4 /* one */,
@@ -1257,7 +1275,11 @@
 				D7E96F9E19D8064D00C0EAB2 /* ZLazyLoadViewController.m in Sources */,
 				ED7CE24F1A514E84004C3C76 /* ZTestMemoryUseViewController.m in Sources */,
 				D7A282EF19F0C2AA00F4027E /* ZTestCDUseDelegateController.m in Sources */,
+<<<<<<< HEAD
 				EDDBA85C1ADCAB2A00442FB9 /* ZDataObj.m in Sources */,
+=======
+				52C564B41AD3F0850059FD10 /* ZCustomView.m in Sources */,
+>>>>>>> coding/dev
 				D79FCD4119EB6F3100C44EF9 /* ZCustomLayer.m in Sources */,
 				D79AB31919DA89FE00C30C05 /* ZtestOperatorViewController.m in Sources */,
 				D7A282E119F0AD0300F4027E /* Card.m in Sources */,
@@ -1265,6 +1287,7 @@
 				EDDFA7AE1ACBCA2F00DF42DB /* ZTestKVOViewController.m in Sources */,
 				D7E96F9919D7FD5C00C0EAB2 /* ZTestMemroyView.m in Sources */,
 				D798198919F4A9EF0061B902 /* ZTestTemperatures.m in Sources */,
+				52C564B11AD3EF730059FD10 /* ZTestFourViewController.m in Sources */,
 				D798198D19F4AB060061B902 /* ZZTestTemperaturesViewController.m in Sources */,
 				ED31F5641A5CDF110008B58D /* ZTestTablViewViewController.m in Sources */,
 				D78B75EB19EE1FBA00247A07 /* ZGifView.m in Sources */,
