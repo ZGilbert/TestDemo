@@ -43,9 +43,6 @@
 //#import "ZBasicBlockViewController.h"
 //#import "ZTestKVOViewController.h"
 //#import "ZTestNotificationViewController.h"
-<<<<<<< HEAD
-=======
-#import "ZTestFourViewController.h"
->>>>>>> coding/dev
+//#import "ZTestFourViewController.h"
 
 #endif

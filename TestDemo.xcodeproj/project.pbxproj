@@ -1275,11 +1275,8 @@
 				D7E96F9E19D8064D00C0EAB2 /* ZLazyLoadViewController.m in Sources */,
 				ED7CE24F1A514E84004C3C76 /* ZTestMemoryUseViewController.m in Sources */,
 				D7A282EF19F0C2AA00F4027E /* ZTestCDUseDelegateController.m in Sources */,
-<<<<<<< HEAD
 				EDDBA85C1ADCAB2A00442FB9 /* ZDataObj.m in Sources */,
-=======
 				52C564B41AD3F0850059FD10 /* ZCustomView.m in Sources */,
->>>>>>> coding/dev
 				D79FCD4119EB6F3100C44EF9 /* ZCustomLayer.m in Sources */,
 				D79AB31919DA89FE00C30C05 /* ZtestOperatorViewController.m in Sources */,
 				D7A282E119F0AD0300F4027E /* Card.m in Sources */,
