@@ -129,6 +129,7 @@
 		EDDFA7AF1ACBCA2F00DF42DB /* ZTestKVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDDFA7AD1ACBCA2F00DF42DB /* ZTestKVOViewController.xib */; };
 		EDDFA7B21ACBCA6100DF42DB /* ZiPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDFA7B11ACBCA6100DF42DB /* ZiPhone.m */; };
 		EDE27C441AAFEFA6003F8C7B /* ZTestLLDBViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EDE27C431AAFEFA6003F8C7B /* ZTestLLDBViewController.mm */; };
+		EDE3B1161B02FC0A00DF4BCC /* ZTestSteperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE3B1151B02FC0A00DF4BCC /* ZTestSteperViewController.m */; };
 		EDF088D61AB135D90021A831 /* ZBasicBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF088D51AB135D90021A831 /* ZBasicBlockViewController.m */; };
 		EDF088D91AB137E20021A831 /* ZOBJ1.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF088D81AB137E20021A831 /* ZOBJ1.m */; };
 /* End PBXBuildFile section */
@@ -368,6 +369,8 @@
 		EDDFA7B11ACBCA6100DF42DB /* ZiPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZiPhone.m; path = Class/testKVO/ZiPhone.m; sourceTree = "<group>"; };
 		EDE27C421AAFEFA6003F8C7B /* ZTestLLDBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestLLDBViewController.h; path = Class/testlldb/ZTestLLDBViewController.h; sourceTree = "<group>"; };
 		EDE27C431AAFEFA6003F8C7B /* ZTestLLDBViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ZTestLLDBViewController.mm; path = Class/testlldb/ZTestLLDBViewController.mm; sourceTree = "<group>"; };
+		EDE3B1141B02FC0A00DF4BCC /* ZTestSteperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestSteperViewController.h; path = Class/testUISteper/ZTestSteperViewController.h; sourceTree = "<group>"; };
+		EDE3B1151B02FC0A00DF4BCC /* ZTestSteperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestSteperViewController.m; path = Class/testUISteper/ZTestSteperViewController.m; sourceTree = "<group>"; };
 		EDF088D41AB135D90021A831 /* ZBasicBlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZBasicBlockViewController.h; path = Class/testBlock/ZBasicBlockViewController.h; sourceTree = "<group>"; };
 		EDF088D51AB135D90021A831 /* ZBasicBlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZBasicBlockViewController.m; path = Class/testBlock/ZBasicBlockViewController.m; sourceTree = "<group>"; };
 		EDF088D71AB137E20021A831 /* ZOBJ1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZOBJ1.h; path = Class/testBlock/ZOBJ1.h; sourceTree = "<group>"; };
@@ -540,6 +543,7 @@
 		D76F892C19CFC3CB004024BF /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				EDE3B1131B02FBDF00DF4BCC /* testUISteper */,
 				EDCCF84C1ACCDF0C00691EB0 /* testNotification */,
 				EDDFA7A11ACB81CB00DF42DB /* testKVO */,
 				EDD2D71A1AC8E6CC00E75865 /* testCamera */,
@@ -1146,6 +1150,15 @@
 			name = testlldb;
 			sourceTree = "<group>";
 		};
+		EDE3B1131B02FBDF00DF4BCC /* testUISteper */ = {
+			isa = PBXGroup;
+			children = (
+				EDE3B1141B02FC0A00DF4BCC /* ZTestSteperViewController.h */,
+				EDE3B1151B02FC0A00DF4BCC /* ZTestSteperViewController.m */,
+			);
+			name = testUISteper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1333,6 +1346,7 @@
 				D7D30F5919EFCFC60011A4C1 /* Model.xcdatamodeld in Sources */,
 				ED27E7921AB042DB00C2C9EB /* ZTestOC.mm in Sources */,
 				D79B908D19EF6BB000793A8A /* ZIncrementlyImage.m in Sources */,
+				EDE3B1161B02FC0A00DF4BCC /* ZTestSteperViewController.m in Sources */,
 				D7C3D5DC1A0086AA006A8C07 /* ZTestAnimationTViewController.m in Sources */,
 				D7C4323A19F7A66000F37227 /* ZTestConCurrentViewController.m in Sources */,
 				D7993A3319ED02DD00E0E2A4 /* ZTestHookViewController.m in Sources */,
