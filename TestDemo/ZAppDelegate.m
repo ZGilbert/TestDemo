@@ -8,11 +8,19 @@
 
 #import "ZAppDelegate.h"
 #import "HeaderFile.h"
+#import "Classy.h" //for liveautolayout
 
 @implementation ZAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    //for liveautolayout
+#if TARGET_IPHONE_SIMULATOR
+    NSString* absoluteFilePath = CASAbsoluteFilePath(@"stylesheet.cas");
+    [CASStyler defaultStyler].watchFilePath = absoluteFilePath;
+#endif
+    
     NSString *bundleId = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"];
     ZLOG(@"bundleId ==> %@", bundleId);
     //友盟统计
@@ -37,7 +45,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    ZTestSteperViewController *test = [[ZTestSteperViewController alloc] init];
+    ZTestLiveAutoLayoutViewController *test = [[ZTestLiveAutoLayoutViewController alloc] init];
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:test];
     
     /*[ZTestHookTwo initialize];

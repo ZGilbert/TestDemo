@@ -44,6 +44,8 @@
 //#import "ZTestKVOViewController.h"
 //#import "ZTestNotificationViewController.h"
 //#import "ZTestFourViewController.h"
-#import "ZTestSteperViewController.h"
+//#import "ZTestSteperViewController.h"
+//#import "ZTestAttributeViewController.h"
+#import "ZTestLiveAutoLayoutViewController.h"
 
 #endif

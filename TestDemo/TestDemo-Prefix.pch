@@ -24,3 +24,6 @@
 
 #define APP_SCREEN_WIDTH            [UIScreen mainScreen].bounds.size.width
 #define APP_SCREEN_HEIGHT           [UIScreen mainScreen].bounds.size.height
+
+#define TICK   NSDate *startTime = [NSDate date]
+#define TOCK   ZLOG(@"Time: %f", -[startTime timeIntervalSinceNow])

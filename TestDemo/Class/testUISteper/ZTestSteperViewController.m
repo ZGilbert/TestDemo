@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    TICK;
     UIStepper *stepper = [[UIStepper alloc] init];
     stepper.tag = 10;
     stepper.center = CGPointMake(160, 240);
@@ -30,10 +31,17 @@
     
     
     [self.view addSubview:stepper];
+    TOCK;
+}
+
+-(void) doaa {
+    //触发次数%H
+    //一个for循环，而且不会中断程序，切不需要加一句代码。但是一定要记得选中下面的automatically continue after evaluting actions;
 }
 
 -(void)doTest
 {
+    
     UIStepper *per = (UIStepper*)[self.view viewWithTag:10];
     
     if (per.continuous)
@@ -45,6 +53,10 @@
     else
     {
         NSLog(@"N");
+    }
+    
+    for (int i = 0; i < 100; i++) {
+        [self doaa];
     }
 }
 
