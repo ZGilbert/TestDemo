@@ -161,6 +161,8 @@
 		EDA639BD1B27C98C00A78C3C /* LiveView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA639BC1B27C98C00A78C3C /* LiveView.m */; };
 		EDA639C01B27C9AE00A78C3C /* ZTestLiveAutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA639BF1B27C9AE00A78C3C /* ZTestLiveAutoLayoutViewController.m */; };
 		EDA639C21B27C9E700A78C3C /* stylesheet.cas in Resources */ = {isa = PBXBuildFile; fileRef = EDA639C11B27C9E700A78C3C /* stylesheet.cas */; };
+		EDC50ED71B2EBF6D003CE5AB /* ZTestCountCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC50ED61B2EBF6D003CE5AB /* ZTestCountCacheViewController.m */; };
+		EDC50EDB1B2ED3CD003CE5AB /* ZTestWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC50EDA1B2ED3CD003CE5AB /* ZTestWebViewViewController.m */; };
 		EDC847691B156A44005A6CB5 /* ZTestQuartsView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC847681B156A44005A6CB5 /* ZTestQuartsView.m */; };
 		EDC8476E1B156AC3005A6CB5 /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC8476B1B156AC3005A6CB5 /* LineView.m */; };
 		EDC8476F1B156AC3005A6CB5 /* LineView1.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC8476D1B156AC3005A6CB5 /* LineView1.m */; };
@@ -500,6 +502,10 @@
 		EDA639BE1B27C9AE00A78C3C /* ZTestLiveAutoLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestLiveAutoLayoutViewController.h; path = Class/testLiveAutoLayout/ZTestLiveAutoLayoutViewController.h; sourceTree = "<group>"; };
 		EDA639BF1B27C9AE00A78C3C /* ZTestLiveAutoLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestLiveAutoLayoutViewController.m; path = Class/testLiveAutoLayout/ZTestLiveAutoLayoutViewController.m; sourceTree = "<group>"; };
 		EDA639C11B27C9E700A78C3C /* stylesheet.cas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stylesheet.cas; sourceTree = "<group>"; };
+		EDC50ED51B2EBF6D003CE5AB /* ZTestCountCacheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestCountCacheViewController.h; path = Class/testCountCache/ZTestCountCacheViewController.h; sourceTree = "<group>"; };
+		EDC50ED61B2EBF6D003CE5AB /* ZTestCountCacheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestCountCacheViewController.m; path = Class/testCountCache/ZTestCountCacheViewController.m; sourceTree = "<group>"; };
+		EDC50ED91B2ED3CD003CE5AB /* ZTestWebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestWebViewViewController.h; path = Class/testWebView/ZTestWebViewViewController.h; sourceTree = "<group>"; };
+		EDC50EDA1B2ED3CD003CE5AB /* ZTestWebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestWebViewViewController.m; path = Class/testWebView/ZTestWebViewViewController.m; sourceTree = "<group>"; };
 		EDC847671B156A44005A6CB5 /* ZTestQuartsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestQuartsView.h; path = Class/testQuarts/ZTestQuartsView.h; sourceTree = "<group>"; };
 		EDC847681B156A44005A6CB5 /* ZTestQuartsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestQuartsView.m; path = Class/testQuarts/ZTestQuartsView.m; sourceTree = "<group>"; };
 		EDC8476A1B156AC3005A6CB5 /* LineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LineView.h; path = Class/testQuarts/LineView.h; sourceTree = "<group>"; };
@@ -711,6 +717,8 @@
 		D76F892C19CFC3CB004024BF /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				EDC50ED81B2ED3B4003CE5AB /* testWebView */,
+				EDC50ED41B2EBF45003CE5AB /* testCountCache */,
 				EDA639BA1B27C93F00A78C3C /* testLiveAutoLayout */,
 				EDDEF6421B1C2F2700ABB173 /* testAttribute */,
 				EDC847661B156A21005A6CB5 /* testQuarts */,
@@ -1377,6 +1385,24 @@
 			name = testLiveAutoLayout;
 			sourceTree = "<group>";
 		};
+		EDC50ED41B2EBF45003CE5AB /* testCountCache */ = {
+			isa = PBXGroup;
+			children = (
+				EDC50ED51B2EBF6D003CE5AB /* ZTestCountCacheViewController.h */,
+				EDC50ED61B2EBF6D003CE5AB /* ZTestCountCacheViewController.m */,
+			);
+			name = testCountCache;
+			sourceTree = "<group>";
+		};
+		EDC50ED81B2ED3B4003CE5AB /* testWebView */ = {
+			isa = PBXGroup;
+			children = (
+				EDC50ED91B2ED3CD003CE5AB /* ZTestWebViewViewController.h */,
+				EDC50EDA1B2ED3CD003CE5AB /* ZTestWebViewViewController.m */,
+			);
+			name = testWebView;
+			sourceTree = "<group>";
+		};
 		EDC847661B156A21005A6CB5 /* testQuarts */ = {
 			isa = PBXGroup;
 			children = (
@@ -1644,6 +1670,7 @@
 				EDDBA85C1ADCAB2A00442FB9 /* ZDataObj.m in Sources */,
 				52C564B41AD3F0850059FD10 /* ZCustomView.m in Sources */,
 				EDA639761B27C87900A78C3C /* CASStyleNode.m in Sources */,
+				EDC50ED71B2EBF6D003CE5AB /* ZTestCountCacheViewController.m in Sources */,
 				EDA639471B27C86A00A78C3C /* UIBarItem+CASAdditions.m in Sources */,
 				EDA639481B27C86A00A78C3C /* UIColor+CASAdditions.m in Sources */,
 				EDA639781B27C87900A78C3C /* CASStyler.m in Sources */,
@@ -1750,6 +1777,7 @@
 				EDA639771B27C87900A78C3C /* CASStyleProperty.m in Sources */,
 				EDA639451B27C86A00A78C3C /* NSRegularExpression+CASAdditions.m in Sources */,
 				D744E29819EF92950054EADB /* ZTestAnimationViewController.m in Sources */,
+				EDC50EDB1B2ED3CD003CE5AB /* ZTestWebViewViewController.m in Sources */,
 				EDA639791B27C87900A78C3C /* CASStyleSelector.m in Sources */,
 				D79FCD3E19EB6EE600C44EF9 /* ZTestAnimateCALayerViewController.m in Sources */,
 				D79819A319F50BA20061B902 /* ZTableViewOneCell.m in Sources */,
