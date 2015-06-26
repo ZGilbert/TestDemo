@@ -26,8 +26,10 @@
     [self.redBoxView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(@(self.redBoxView.cas_marginTop));
         make.left.equalTo(@(self.redBoxView.cas_marginLeft));
-        make.width.equalTo(@(self.redBoxView.cas_sizeWidth));
-        make.height.equalTo(@(self.redBoxView.cas_sizeHeight));
+        make.right.equalTo(@(self.redBoxView.cas_marginRight));
+        make.bottom.equalTo(@(self.redBoxView.cas_marginBottom));
+//        make.width.equalTo(@(self.redBoxView.cas_sizeWidth));
+//        make.height.equalTo(@(self.redBoxView.cas_sizeHeight));
     }];
     
     [self.blueBoxView mas_updateConstraints:^(MASConstraintMaker *make) {
