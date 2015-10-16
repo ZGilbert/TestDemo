@@ -48,6 +48,7 @@
 //#import "ZTestAttributeViewController.h"
 //#import "ZTestLiveAutoLayoutViewController.h"
 //#import "ZTestCountCacheViewController.h"
-#import "ZTestWebViewViewController.h"
+//#import "ZTestWebViewViewController.h"
+#import "ZTestRuntimeViewController.h"
 
 #endif

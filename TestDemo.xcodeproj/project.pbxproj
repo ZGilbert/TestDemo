@@ -187,6 +187,8 @@
 		EDE3B1161B02FC0A00DF4BCC /* ZTestSteperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE3B1151B02FC0A00DF4BCC /* ZTestSteperViewController.m */; };
 		EDF088D61AB135D90021A831 /* ZBasicBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF088D51AB135D90021A831 /* ZBasicBlockViewController.m */; };
 		EDF088D91AB137E20021A831 /* ZOBJ1.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF088D81AB137E20021A831 /* ZOBJ1.m */; };
+		EDF650561BD0F77600307CAD /* ZTestRuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF650551BD0F77600307CAD /* ZTestRuntimeViewController.m */; };
+		EDF650591BD0F7D100307CAD /* ZLender.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF650581BD0F7D100307CAD /* ZLender.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -548,6 +550,10 @@
 		EDF088D51AB135D90021A831 /* ZBasicBlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZBasicBlockViewController.m; path = Class/testBlock/ZBasicBlockViewController.m; sourceTree = "<group>"; };
 		EDF088D71AB137E20021A831 /* ZOBJ1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZOBJ1.h; path = Class/testBlock/ZOBJ1.h; sourceTree = "<group>"; };
 		EDF088D81AB137E20021A831 /* ZOBJ1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZOBJ1.m; path = Class/testBlock/ZOBJ1.m; sourceTree = "<group>"; };
+		EDF650541BD0F77600307CAD /* ZTestRuntimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestRuntimeViewController.h; path = Class/testRuntime/ZTestRuntimeViewController.h; sourceTree = "<group>"; };
+		EDF650551BD0F77600307CAD /* ZTestRuntimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestRuntimeViewController.m; path = Class/testRuntime/ZTestRuntimeViewController.m; sourceTree = "<group>"; };
+		EDF650571BD0F7D100307CAD /* ZLender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZLender.h; path = Class/testRuntime/ZLender.h; sourceTree = "<group>"; };
+		EDF650581BD0F7D100307CAD /* ZLender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZLender.m; path = Class/testRuntime/ZLender.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -717,6 +723,7 @@
 		D76F892C19CFC3CB004024BF /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				EDF650531BD0F75400307CAD /* testRuntime */,
 				EDC50ED81B2ED3B4003CE5AB /* testWebView */,
 				EDC50ED41B2EBF45003CE5AB /* testCountCache */,
 				EDA639BA1B27C93F00A78C3C /* testLiveAutoLayout */,
@@ -1530,6 +1537,17 @@
 			name = testUISteper;
 			sourceTree = "<group>";
 		};
+		EDF650531BD0F75400307CAD /* testRuntime */ = {
+			isa = PBXGroup;
+			children = (
+				EDF650541BD0F77600307CAD /* ZTestRuntimeViewController.h */,
+				EDF650551BD0F77600307CAD /* ZTestRuntimeViewController.m */,
+				EDF650571BD0F7D100307CAD /* ZLender.h */,
+				EDF650581BD0F7D100307CAD /* ZLender.m */,
+			);
+			name = testRuntime;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1700,6 +1718,7 @@
 				D72EFAAE19EE004D005C4D23 /* ZTestNSArrayHookViewController.m in Sources */,
 				EDC8476F1B156AC3005A6CB5 /* LineView1.m in Sources */,
 				EDA6396F1B27C87900A78C3C /* CASDeviceOSVersionItem.m in Sources */,
+				EDF650591BD0F7D100307CAD /* ZLender.m in Sources */,
 				D78B75DE19EE11E700247A07 /* ZTestSelectorViewController.m in Sources */,
 				D76F890A19CFC38E004024BF /* main.m in Sources */,
 				D7993A3B19ED162400E0E2A4 /* ZTestHookTwo.m in Sources */,
@@ -1707,6 +1726,7 @@
 				D79B908A19EF689A00793A8A /* ZIncrementallyImageViewController.m in Sources */,
 				ED27E78E1AB0270900C2C9EB /* ZLLDBWebViewController.m in Sources */,
 				EDD4F16B1A5A927500941632 /* ZTestSthTwoViewController.m in Sources */,
+				EDF650561BD0F77600307CAD /* ZTestRuntimeViewController.m in Sources */,
 				D798199F19F50B570061B902 /* ZTestTableViewGroupViewController.m in Sources */,
 				EDA6394E1B27C86A00A78C3C /* UIView+CASAdditions.m in Sources */,
 				EDA6394C1B27C86A00A78C3C /* UITextField+CASAdditions.m in Sources */,
