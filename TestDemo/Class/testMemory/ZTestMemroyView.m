@@ -26,6 +26,7 @@ dispatch_queue_t queue;
         
         NSString *filePath2 = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"png"];
         queue = dispatch_queue_create("load image", NULL);
+//        queue = dispatch_queue_create("logadf", DISPATCH_QUEUE_SERIAL);
         
         __block UIImageView *testIV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
         dispatch_async(queue, ^{

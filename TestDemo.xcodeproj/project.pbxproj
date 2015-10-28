@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		52C564B11AD3EF730059FD10 /* ZTestFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C564B01AD3EF730059FD10 /* ZTestFourViewController.m */; };
 		52C564B41AD3F0850059FD10 /* ZCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C564B31AD3F0850059FD10 /* ZCustomView.m */; };
+		52E2C6191B6F448300544B7E /* ZTestScrollViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E2C6181B6F448300544B7E /* ZTestScrollViewViewController.m */; };
 		D700A5F219EDFF0F00D1A6F4 /* NSArray+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = D700A5F119EDFF0F00D1A6F4 /* NSArray+Hook.m */; };
 		D707C6161A2FF39F00E1239B /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = D707C6151A2FF39F00E1239B /* OpenGLView.m */; };
 		D72EFAAE19EE004D005C4D23 /* ZTestNSArrayHookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D72EFAAD19EE004D005C4D23 /* ZTestNSArrayHookViewController.m */; };
@@ -204,6 +205,8 @@
 		52C564B01AD3EF730059FD10 /* ZTestFourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestFourViewController.m; path = Class/testHook/ZTestFourViewController.m; sourceTree = "<group>"; };
 		52C564B21AD3F0850059FD10 /* ZCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZCustomView.h; path = Class/testHook/ZCustomView.h; sourceTree = "<group>"; };
 		52C564B31AD3F0850059FD10 /* ZCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZCustomView.m; path = Class/testHook/ZCustomView.m; sourceTree = "<group>"; };
+		52E2C6171B6F448300544B7E /* ZTestScrollViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestScrollViewViewController.h; path = Class/testWebView/ZTestScrollViewViewController.h; sourceTree = "<group>"; };
+		52E2C6181B6F448300544B7E /* ZTestScrollViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestScrollViewViewController.m; path = Class/testWebView/ZTestScrollViewViewController.m; sourceTree = "<group>"; };
 		D700A5F019EDFF0F00D1A6F4 /* NSArray+Hook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Hook.h"; path = "Class/testHook/NSArray+Hook.h"; sourceTree = "<group>"; };
 		D700A5F119EDFF0F00D1A6F4 /* NSArray+Hook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Hook.m"; path = "Class/testHook/NSArray+Hook.m"; sourceTree = "<group>"; };
 		D707C6141A2FF39F00E1239B /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLView.h; path = Class/testOpenGL/OpenGLView.h; sourceTree = "<group>"; };
@@ -1399,6 +1402,8 @@
 			children = (
 				EDC50ED91B2ED3CD003CE5AB /* ZTestWebViewViewController.h */,
 				EDC50EDA1B2ED3CD003CE5AB /* ZTestWebViewViewController.m */,
+				52E2C6171B6F448300544B7E /* ZTestScrollViewViewController.h */,
+				52E2C6181B6F448300544B7E /* ZTestScrollViewViewController.m */,
 			);
 			name = testWebView;
 			sourceTree = "<group>";
@@ -1774,6 +1779,7 @@
 				EDA639B51B27C91000A78C3C /* MASViewAttribute.m in Sources */,
 				D7A282E719F0B8CC00F4027E /* ZCoreDataAPI.m in Sources */,
 				EDDFA7B21ACBCA6100DF42DB /* ZiPhone.m in Sources */,
+				52E2C6191B6F448300544B7E /* ZTestScrollViewViewController.m in Sources */,
 				EDA639771B27C87900A78C3C /* CASStyleProperty.m in Sources */,
 				EDA639451B27C86A00A78C3C /* NSRegularExpression+CASAdditions.m in Sources */,
 				D744E29819EF92950054EADB /* ZTestAnimationViewController.m in Sources */,

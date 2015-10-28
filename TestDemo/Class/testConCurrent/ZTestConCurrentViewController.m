@@ -21,6 +21,27 @@
     // Do any additional setup after loading the view.
     
     [self testA];
+
+    [self testB];
+}
+
+- (void)testB
+{
+    //创建串行队列
+    dispatch_queue_t queue = dispatch_queue_create("me.tutuge.test.gcd", DISPATCH_QUEUE_CONCURRENT);
+    //立即打印一条信息
+    NSLog(@"Begin add block...");
+    //提交一个block
+    dispatch_async(queue, ^{
+        //Sleep 10秒
+        [NSThread sleepForTimeInterval:10];
+        NSLog(@"First block done...");
+    });
+    //5 秒以后提交block
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), queue, ^{
+        NSLog(@"After...");
+    });
+
 }
 
 -(void) testA
@@ -32,7 +53,7 @@
     for (size_t i = 0; i < count; ++i) {
         inputValues[i] = arc4random();
     }
-    
+
     // 开始4个寻找最小值和最大值的线程
     size_t const threadCount = 4;
     pthread_t tid[threadCount];
