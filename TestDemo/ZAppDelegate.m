@@ -45,7 +45,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    ZTestPackageCellViewController *test = [[ZTestPackageCellViewController alloc] init];
+    ZTestRuntimeViewController *test = [[ZTestRuntimeViewController alloc] init];
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:test];
     
     /*[ZTestHookTwo initialize];
