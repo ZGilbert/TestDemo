@@ -15,6 +15,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+//    NSURL *url = [NSURL URLWithString:@"http://www.baidu.com/search?id=1"];
+//    NSLog(@"scheme:%@", [url scheme]); //协议 http
+//    NSLog(@"host:%@", [url host]);     //域名 www.baidu.com
+//    NSLog(@"absoluteString:%@", [url absoluteString]); //完整的url字符串
+    
     //for liveautolayout
 #if TARGET_IPHONE_SIMULATOR
     NSString* absoluteFilePath = CASAbsoluteFilePath(@"stylesheet.cas");
@@ -43,9 +48,10 @@
     
 //    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    NSLog(@"[[UIScreen mainScreen] bounds] ==> %f", [[UIScreen mainScreen] bounds].size.height);
     // Override point for customization after application launch.
     
-    ZTestRuntimeViewController *test = [[ZTestRuntimeViewController alloc] init];
+    ZTestCollectionViewController *test = [[ZTestCollectionViewController alloc] init];
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:test];
     
     /*[ZTestHookTwo initialize];
