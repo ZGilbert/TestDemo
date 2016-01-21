@@ -1,22 +1,31 @@
 
 #import "GUtil.h"
 #import <math.h>
-#import "GDefine.h"
-#import "NSString_Extras.h"
-#import "AppDelegate.h"
+//#import "GDefine.h"
+//#import "NSString_Extras.h"
+//#import "AppDelegate.h"
 #import <sys/utsname.h>
 #import <netdb.h>
 
 #include <ifaddrs.h>
 #include <arpa/inet.h>
 #include <net/if.h>
-#import "YTKNetworkAgent.h"
+//#import "YTKNetworkAgent.h"
 
 #define IOS_CELLULAR    @"pdp_ip0"
 #define IOS_WIFI        @"en0"
 #define IOS_VPN         @"utun0"
 #define IP_ADDR_IPv4    @"ipv4"
 #define IP_ADDR_IPv6    @"ipv6"
+
+#define GID @"userID"
+#define LTXT(s) NSLocalizedString(@"" #s "", nil)
+#define KBundleName [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"]
+#define KAppName [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"]
+#define KBundleIdentifier [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleIdentifier"]
+
+#define AppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+#define IosVersion floorf([[[UIDevice currentDevice] systemVersion] floatValue])
 
 @implementation GUtil
 
@@ -153,6 +162,7 @@
     NSString *deviceString = [NSString stringWithCString:systemInfo.nodename encoding:NSUTF8StringEncoding];
     return deviceString;
 }
+#define SF2(a1,a2) [NSString stringWithFormat:@"%@%@",a1,a2]
 
 + (NSString *)getOSVersion
 {
@@ -222,10 +232,10 @@
     }
     return [addresses count] ? addresses : nil;
 }
-
+#define ValidArray(f) (f!=nil && [f isKindOfClass:[NSArray class]] && [f count]>0)
 + (NSString *)getSIPAddress
 {
-    NSString *hostname = [[NSURL URLWithString:[YTKNetworkAgent sharedInstance].baseNetWorkURL] host];
+    NSString *hostname = [[NSURL URLWithString:@"http://weibo.com"] host];
     CFHostRef hostRef = CFHostCreateWithName(kCFAllocatorDefault, (__bridge CFStringRef)hostname);
     NSString *strDNS = @"0.0.0.0";
     if (hostRef)
@@ -266,8 +276,9 @@
 
 +(BOOL) phoneNumCheck:(NSString*)phone
 {
-	NSString* phoneExpression=[NSString stringWithUTF8String:"^[0-9]{8,16}$"];
-	return [phone grep:phoneExpression options:REG_ICASE];
+//	NSString* phoneExpression=[NSString stringWithUTF8String:"^[0-9]{8,16}$"];    
+//	return [phone grep:phoneExpression options:REG_ICASE];
+    return YES;
 }
 
 +(NSString*) processPhoneNumber:(NSString*)input trimOrAppend:(BOOL)trimsuffix

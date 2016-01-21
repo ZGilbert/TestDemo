@@ -13,6 +13,7 @@
 		D700A5F219EDFF0F00D1A6F4 /* NSArray+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = D700A5F119EDFF0F00D1A6F4 /* NSArray+Hook.m */; };
 		D707C6161A2FF39F00E1239B /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = D707C6151A2FF39F00E1239B /* OpenGLView.m */; };
 		D72EFAAE19EE004D005C4D23 /* ZTestNSArrayHookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D72EFAAD19EE004D005C4D23 /* ZTestNSArrayHookViewController.m */; };
+		D739FAC91C5073A20010EFCF /* GUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D739FAC81C5073A20010EFCF /* GUtil.m */; };
 		D74420571C1919AB004A0BA4 /* ZTestCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D74420561C1919AB004A0BA4 /* ZTestCollectionViewController.m */; };
 		D744E29819EF92950054EADB /* ZTestAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D744E29719EF92950054EADB /* ZTestAnimationViewController.m */; };
 		D744E29C19EF96FC0054EADB /* ZTestCoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D744E29B19EF96FC0054EADB /* ZTestCoreDataViewController.m */; };
@@ -217,6 +218,8 @@
 		D707C6151A2FF39F00E1239B /* OpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenGLView.m; path = Class/testOpenGL/OpenGLView.m; sourceTree = "<group>"; };
 		D72EFAAC19EE004D005C4D23 /* ZTestNSArrayHookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestNSArrayHookViewController.h; path = Class/testHook/ZTestNSArrayHookViewController.h; sourceTree = "<group>"; };
 		D72EFAAD19EE004D005C4D23 /* ZTestNSArrayHookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestNSArrayHookViewController.m; path = Class/testHook/ZTestNSArrayHookViewController.m; sourceTree = "<group>"; };
+		D739FAC71C5073A20010EFCF /* GUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GUtil.h; path = Helper/Tools/GUtil.h; sourceTree = "<group>"; };
+		D739FAC81C5073A20010EFCF /* GUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GUtil.m; path = Helper/Tools/GUtil.m; sourceTree = "<group>"; };
 		D74420551C1919AB004A0BA4 /* ZTestCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestCollectionViewController.h; path = Class/testCollectionView/ZTestCollectionViewController.h; sourceTree = "<group>"; };
 		D74420561C1919AB004A0BA4 /* ZTestCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZTestCollectionViewController.m; path = Class/testCollectionView/ZTestCollectionViewController.m; sourceTree = "<group>"; };
 		D744E29619EF92950054EADB /* ZTestAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZTestAnimationViewController.h; path = Class/testAnimation/ZTestAnimationViewController.h; sourceTree = "<group>"; };
@@ -618,6 +621,15 @@
 				D707C6151A2FF39F00E1239B /* OpenGLView.m */,
 			);
 			name = testOpenGL;
+			sourceTree = "<group>";
+		};
+		D739FAC61C5073950010EFCF /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D739FAC71C5073A20010EFCF /* GUtil.h */,
+				D739FAC81C5073A20010EFCF /* GUtil.m */,
+			);
+			name = Tools;
 			sourceTree = "<group>";
 		};
 		D74420541C19196A004A0BA4 /* testCollectionView */ = {
@@ -1274,6 +1286,7 @@
 		EDA639261B27C7B500A78C3C /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				D739FAC61C5073950010EFCF /* Tools */,
 				EDA639291B27C7E400A78C3C /* Masonry */,
 				EDA639281B27C7DC00A78C3C /* ClassyLiveLayout */,
 				EDA639271B27C7D300A78C3C /* Classy */,
@@ -1760,6 +1773,7 @@
 				D7C06AA119F6211000597D17 /* ZMacroApi.m in Sources */,
 				D772FFEC19E526EB00A7CF29 /* ZPerson.m in Sources */,
 				D76AA13A19E52009008F5DB0 /* ZTestStringViewController.m in Sources */,
+				D739FAC91C5073A20010EFCF /* GUtil.m in Sources */,
 				D7CAB4441A08B6CF006C1E7E /* SZTextView.m in Sources */,
 				D772FFE919E526A700A7CF29 /* ZTestCategoryViewController.m in Sources */,
 				D7CAB4471A08B6F4006C1E7E /* ZTestSZTextViewViewController.m in Sources */,
